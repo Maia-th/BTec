@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+//import Navbar from '././components/Navbar/Navbar';
 import './styles/global.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './styles/variables.css';
+import Footer from './components/footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <p>Ola Mundo</p>
+  <React.StrictMode>  
+    {/* <Navbar /> */}
+    <Footer/>
   </React.StrictMode>
 );
-
-reportWebVitals();
