@@ -50,3 +50,10 @@ h6{
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+a,
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}

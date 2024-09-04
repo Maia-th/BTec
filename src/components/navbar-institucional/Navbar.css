@@ -1,0 +1,151 @@
+/*GERAL*/
+header nav ul {
+  align-items: center;
+}
+header nav ul li a {
+  color: var(--white);
+}
+
+header nav .SigBTec {
+  background-color: transparent;
+  border: solid 0.1rem var(--btecGray);
+  border-radius: 1.5rem;
+  color: var(--white);
+  padding: 0.3rem 1.5rem;
+  cursor: pointer;
+}
+
+/* Menu Desktop */
+header .Menu-Desktop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  padding: 0.38rem 5rem;
+  justify-content: space-between;
+  background-color: var(--btecBlue);
+  z-index: 7;
+}
+header .Menu-Desktop .logo {
+  height: auto;
+}
+header .Menu-Desktop .logo img {
+  width: 6.4rem;
+}
+
+header .Menu-Desktop .Desktop-Nav ul {
+  display: flex;
+  font-size: 1.2rem;
+}
+
+header .Menu-Desktop .Desktop-Nav ul li a {
+  margin-right: 2rem;
+}
+
+header .Menu-Desktop .Desktop-Nav ul li a:hover {
+  color: var(--btecLaranja);
+}
+
+/* Menu Mobile */
+header {
+  height: 3rem;
+}
+
+header .Menu-Mobile .menu-Icon {
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  top: 0;
+  background-color: var(--btecBlue);
+}
+
+header .Menu-Mobile .menu-Icon .logo img {
+  width: 1rem;
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+
+header .Menu-Mobile .menu-Icon .mIcon {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+header .Menu-Mobile .menu-Icon .mIcon #barraMenu {
+  display: block;
+  width: 1.5rem;
+  border-top: 0.2rem solid;
+  color: var(--white);
+}
+
+#barraMenu::after,
+#barraMenu::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin-top: 0.25rem;
+  transition: 0.3s;
+  background-color: currentColor;
+}
+
+#Mobile.ativo #barraMenu {
+  border-top-color: transparent;
+}
+
+#Mobile.ativo #barraMenu::after {
+  transform: rotate(-135deg);
+  top: -0.45rem;
+}
+
+#Mobile.ativo #barraMenu::before {
+  transform: rotate(135deg);
+}
+
+header .Menu-Mobile .area_menu {
+  display: flex;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  justify-content: end;
+}
+
+header .Menu-Mobile .area_menu #Menu-Open {
+  display: none;
+  width: 0vw;
+  background-color: var(--btecBlue);
+  overflow: hidden;
+}
+
+header .Menu-Mobile .area_menu #Menu-Open ul {
+  margin: 3.5rem 0 1.5rem 0;
+  padding: 0;
+}
+
+header .Menu-Mobile .area_menu #Menu-Open ul li {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  header .Menu-Mobile {
+    display: none;
+  }
+  header .Menu-Desktop {
+    display: flex;
+  }
+  header {
+    height: 4.8rem;
+  }
+}
