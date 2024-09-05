@@ -1,0 +1,27 @@
+.divContainer{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 5%;
+    background-color: var(--btecGray);
+}
+
+.divMissao{
+    display: flex;
+    flex-direction:column;
+    width: 23rem;
+}
+
+.num{
+    background-image: url("fundoNumero.svg");
+    width: 3.39rem;
+    height: 2.805rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.num {
+    color: white;
+}
