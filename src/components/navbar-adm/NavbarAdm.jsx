@@ -4,7 +4,7 @@ import logo from "../../assets/images/logoBranco.svg";
 
 function navbarAdm() {
   return (
-    <header>
+    <section className="Navegacao">
       <div className="Menu-Desktop">
         <div className="logo">
           <a href="#">
@@ -92,7 +92,7 @@ function navbarAdm() {
           </nav>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 

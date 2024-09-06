@@ -1,12 +1,12 @@
 /*GERAL*/
-header nav ul {
+.Navegacao nav ul {
   align-items: center;
 }
-header nav ul li a {
+.Navegacao nav ul li a {
   color: var(--white);
 }
 
-header nav .SigBTec {
+.Navegacao nav .SigBTec {
   background-color: transparent;
   border: solid 0.1rem var(--btecGray);
   border-radius: 1.5rem;
@@ -16,7 +16,7 @@ header nav .SigBTec {
 }
 
 /* Menu Desktop */
-header .Menu-Desktop {
+.Navegacao .Menu-Desktop {
   position: fixed;
   top: 0;
   right: 0;
@@ -28,32 +28,32 @@ header .Menu-Desktop {
   background-color: var(--btecBlue);
   z-index: 7;
 }
-header .Menu-Desktop .logo {
+.Navegacao .Menu-Desktop .logo {
   height: auto;
 }
-header .Menu-Desktop .logo img {
+.Navegacao .Menu-Desktop .logo img {
   width: 6.4rem;
 }
 
-header .Menu-Desktop .Desktop-Nav ul {
+.Navegacao .Menu-Desktop .Desktop-Nav ul {
   display: flex;
   font-size: 1.2rem;
 }
 
-header .Menu-Desktop .Desktop-Nav ul li a {
+.Navegacao .Menu-Desktop .Desktop-Nav ul li a {
   margin-right: 2rem;
 }
 
-header .Menu-Desktop .Desktop-Nav ul li a:hover {
+.Navegacao .Menu-Desktop .Desktop-Nav ul li a:hover {
   color: var(--btecLaranja);
 }
 
 /* Menu Mobile */
-header {
+.Navegacao {
   height: 3rem;
 }
 
-header .Menu-Mobile .menu-Icon {
+.Navegacao .Menu-Mobile .menu-Icon {
   width: 100%;
   position: fixed;
   align-items: center;
@@ -64,13 +64,13 @@ header .Menu-Mobile .menu-Icon {
   background-color: var(--btecBlue);
 }
 
-header .Menu-Mobile .menu-Icon .logo img {
+.Navegacao .Menu-Mobile .menu-Icon .logo img {
   width: 1rem;
   margin-left: 2rem;
   margin-top: 0.2rem;
 }
 
-header .Menu-Mobile .menu-Icon .mIcon {
+.Navegacao .Menu-Mobile .menu-Icon .mIcon {
   display: flex;
   margin: 0.5rem;
   padding: 0.5rem 1rem;
@@ -79,7 +79,7 @@ header .Menu-Mobile .menu-Icon .mIcon {
   cursor: pointer;
 }
 
-header .Menu-Mobile .menu-Icon .mIcon #barraMenu {
+.Navegacao .Menu-Mobile .menu-Icon .mIcon #barraMenu {
   display: block;
   width: 1.5rem;
   border-top: 0.2rem solid;
@@ -111,7 +111,7 @@ header .Menu-Mobile .menu-Icon .mIcon #barraMenu {
   transform: rotate(135deg);
 }
 
-header .Menu-Mobile .area_menu {
+.Navegacao .Menu-Mobile .area_menu {
   display: flex;
   position: fixed;
   right: 0;
@@ -122,30 +122,30 @@ header .Menu-Mobile .area_menu {
   justify-content: end;
 }
 
-header .Menu-Mobile .area_menu #Menu-Open {
+.Navegacao .Menu-Mobile .area_menu #Menu-Open {
   display: none;
   width: 0vw;
   background-color: var(--btecBlue);
   overflow: hidden;
 }
 
-header .Menu-Mobile .area_menu #Menu-Open ul {
+.Navegacao .Menu-Mobile .area_menu #Menu-Open ul {
   margin: 3.5rem 0 1.5rem 0;
   padding: 0;
 }
 
-header .Menu-Mobile .area_menu #Menu-Open ul li {
+.Navegacao .Menu-Mobile .area_menu #Menu-Open ul li {
   margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  header .Menu-Mobile {
+  .Navegacao .Menu-Mobile {
     display: none;
   }
-  header .Menu-Desktop {
+  .Navegacao .Menu-Desktop {
     display: flex;
   }
-  header {
-    height: 4.8rem;
+  .Navegacao {
+    height: 4.7rem;
   }
 }

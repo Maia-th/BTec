@@ -4,7 +4,7 @@ import logo from "../../assets/images/logoBranco.svg";
 
 function navbarInst() {
   return (
-    <header>
+    <section className="Navegacao">
       <div className="Menu-Desktop">
         <div className="logo">
           <a href="#">
@@ -100,7 +100,7 @@ function navbarInst() {
           </nav>
         </div>
       </div>
-    </header>
+    </section>
   );
 }
 
