@@ -1,0 +1,23 @@
+.sectionParceiros {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.sectionParceiros h2 {
+    margin-bottom: 1rem;
+}
+
+.sectionParceiros .imagens {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionParceiros .imagens img {
+    padding: 1.5rem;
+}
