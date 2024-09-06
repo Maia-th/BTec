@@ -5,6 +5,7 @@ import HeaderBtec from './components/header-btec/HeaderBtec';
 import './styles/global.css';
 import './styles/variables.css';
 import Parceiros from './components/parceiros/Parceiros';
+import Numeros from './components/numeros/Numeros'
 import Footer from './components/footer/Footer';
 import Itabira from './components/itabira/Itabira';
 
@@ -14,6 +15,7 @@ root.render(
     <NavBar /> 
     <HeaderBtec/>
     <Itabira/>
+    <Numeros/>
     <Parceiros/>
     <Footer/>
   </React.StrictMode>
