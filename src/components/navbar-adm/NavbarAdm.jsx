@@ -2,16 +2,16 @@ import React from "react";
 import "../navbar-institucional/Navbar.css";
 import logo from "../../assets/images/logoBranco.svg";
 
-function NavBarInst() {
+function navbarAdm() {
   return (
     <header>
-      <div class="Menu-Desktop">
-        <div class="logo">
+      <div className="Menu-Desktop">
+        <div className="logo">
           <a href="#">
             <img src={logo} alt="Logo" />
           </a>
         </div>
-        <nav class="Desktop-Nav">
+        <nav className="Desktop-Nav">
           <ul>
             <li>
               <a href="#">BTec</a>
@@ -30,8 +30,8 @@ function NavBarInst() {
             </li>
             <li>
               <button
-                class="SigBTec"
-                onclick=""
+                className="SigBTec"
+                onClick=""
                 title="Sistema de gerenciamento"
               >
                 PERFIL
@@ -40,49 +40,49 @@ function NavBarInst() {
           </ul>
         </nav>
       </div>
-      <div id="Mobile" class="Menu-Mobile">
-        <div class="menu-Icon">
-          <div class="logo">
+      <div id="Mobile" className="Menu-Mobile">
+        <div className="menu-Icon">
+          <div className="logo">
             <a href="#">
               <img src={logo} alt="Logo" />
             </a>
           </div>
-          <button class="mIcon" onclick="" title="Icone do Menu Mobile">
+          <button className="mIcon" onClick="" title="Icone do Menu Mobile">
             <span id="barraMenu"></span>
           </button>
         </div>
-        <div class="area_menu">
+        <div className="area_menu">
           <nav id="Menu-Open">
             <ul>
               <li>
-                <a href="#" onclick="">
+                <a href="#" onClick="">
                   BTec
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
+                <a href="#" onClick="">
                   Startups
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
+                <a href="#" onClick="">
                   Monitoramentos
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
+                <a href="#" onClick="">
                   Usuários
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
+                <a href="#" onClick="">
                   Relatórios
                 </a>
               </li>
               <li>
                 <button
-                  class="SigBTec"
-                  onclick=""
+                  className="SigBTec"
+                  onClick=""
                   title="Sistema de gerenciamento"
                 >
                   PERFIL
@@ -96,4 +96,4 @@ function NavBarInst() {
   );
 }
 
-export default NavBarInst;
+export default navbarAdm;

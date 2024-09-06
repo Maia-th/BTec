@@ -1,91 +1,99 @@
 import React from "react";
-import "../navbar-institucional/Navbar.css";
+import "./Navbar.css";
 import logo from "../../assets/images/logoBranco.svg";
 
-function NavBarInst() {
+function navbarInst() {
   return (
     <header>
-      <div class="Menu-Desktop">
-        <div class="logo">
+      <div className="Menu-Desktop">
+        <div className="logo">
           <a href="#">
             <img src={logo} alt="Logo" />
           </a>
         </div>
-        <nav class="Desktop-Nav">
+        <nav className="Desktop-Nav">
           <ul>
             <li>
               <a href="#">BTec</a>
             </li>
             <li>
-              <a href="#">Jornada do Empreendedor</a>
+              <a href="#">Processo de Seleção</a>
             </li>
             <li>
-              <a href="#">Monitoramentos</a>
+              <a href="#">PIBTec</a>
             </li>
             <li>
-              <a href="#">Conteúdos e Evento</a>
+              <a href="#">PMBTec</a>
             </li>
             <li>
-              <a href="#">Suporte</a>
+              <a href="#">Startups</a>
+            </li>
+            <li>
+              <a href="#">Conteúdos e Eventos</a>
             </li>
             <li>
               <button
-                class="SigBTec"
-                onclick=""
+                className="SigBTec"
+                onClick=""
                 title="Sistema de gerenciamento"
               >
-                PERFIL
+                LOGIN
               </button>
             </li>
           </ul>
         </nav>
       </div>
-      <div id="Mobile" class="Menu-Mobile">
-        <div class="menu-Icon">
-          <div class="logo">
+      <div id="Mobile" className="Menu-Mobile">
+        <div className="menu-Icon">
+          <div className="logo">
             <a href="#">
               <img src={logo} alt="Logo" />
             </a>
           </div>
-          <button class="mIcon" onclick="" title="Icone do Menu Mobile">
+          <button className="mIcon" onClick="" title="Icone do Menu Mobile">
             <span id="barraMenu"></span>
           </button>
         </div>
-        <div class="area_menu">
+        <div className="area_menu">
           <nav id="Menu-Open">
             <ul>
               <li>
-                <a href="#" onclick="">
+                <a href="#" onClick="">
                   BTec
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
-                  Jornada do Empreendedor
+                <a href="#" onClick="">
+                  Processo de Seleção
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
-                  Monitoramentos
+                <a href="#" onClick="">
+                  PIBTec
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
+                <a href="#" onClick="">
+                  PMBTec
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick="">
+                  Startups
+                </a>
+              </li>
+              <li>
+                <a href="#" onClick="">
                   Conteúdos e Eventos
                 </a>
               </li>
               <li>
-                <a href="#" onclick="">
-                  Suporte
-                </a>
-              </li>
-              <li>
                 <button
-                  class="SigBTec"
-                  onclick=""
+                  className="SigBTec"
+                  onClick=""
                   title="Sistema de gerenciamento"
                 >
-                  PERFIL
+                  LOGIN
                 </button>
               </li>
             </ul>
@@ -96,4 +104,4 @@ function NavBarInst() {
   );
 }
 
-export default NavBarInst;
+export default navbarInst;
