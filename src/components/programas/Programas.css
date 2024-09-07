@@ -1,0 +1,36 @@
+.programasSection {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 5rem;
+  align-items: center;
+}
+
+.programasSection .PIBTec,
+.programasSection .PMBTec {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 4rem;
+}
+
+.programasSection .PIBTec .info,
+.programasSection .PMBTec .info {
+  max-width: 40%;
+}
+
+.programasSection .PIBTec .info p,
+.programasSection .PMBTec .info p {
+  margin: 1.5rem 0;
+}
+
+.programasSection button {
+  color: var(--white);
+  background-color: var(--btecBlue);
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}

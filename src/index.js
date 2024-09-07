@@ -6,6 +6,7 @@ import './styles/global.css';
 import './styles/variables.css';
 import Parceiros from './components/parceiros/Parceiros';
 import Numeros from './components/numeros/Numeros'
+import Programas from './components/programas/Programas'
 import Footer from './components/footer/Footer';
 import Itabira from './components/itabira/Itabira';
 
@@ -15,6 +16,7 @@ root.render(
     <NavBar /> 
     <HeaderBtec/>
     <Itabira/>
+    <Programas/>
     <Numeros/>
     <Parceiros/>
     <Footer/>
