@@ -19,10 +19,10 @@ root.render(
     <HeaderBtec/>
     <Itabira/>
     <Programas/>
-    <Numeros/>
-    <Parceiros/>
     <QuemSomos/>
+    <Numeros/>
     <Missao/>
+    <Parceiros/>
     <Footer/>
   </React.StrictMode>
 );
