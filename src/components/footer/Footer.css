@@ -1,0 +1,48 @@
+.footer{
+    background-color: var(--btecBlue);
+    height: 15.6rem;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+.logoContato{
+    display: flex;
+    align-items:last baseline;
+}
+
+.logo{
+    height: 6rem;
+    
+}
+
+.divContatos{
+    margin-bottom:5.1rem;
+    margin-left: 4rem;
+}
+
+.divContatos .icons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.divEndereco{
+    background-color: var(--btecLaranja);
+    width: 42rem;
+    height: 10.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divEndereco div{
+    width: 37.5rem;
+}
+
+.titulo{
+    font-weight: bold;
+}
