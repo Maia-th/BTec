@@ -9,6 +9,8 @@ import Numeros from './components/numeros/Numeros'
 import Programas from './components/programas/Programas'
 import Footer from './components/footer/Footer';
 import Itabira from './components/itabira/Itabira';
+import Missao from './components/missao/Missao';
+import QuemSomos from './components/quemSomos/QuemSomos';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +21,8 @@ root.render(
     <Programas/>
     <Numeros/>
     <Parceiros/>
+    <QuemSomos/>
+    <Missao/>
     <Footer/>
   </React.StrictMode>
 );
