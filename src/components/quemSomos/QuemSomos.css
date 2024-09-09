@@ -1,0 +1,28 @@
+.divSomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--btecGray);
+}
+.divVideo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-top: 1.5rem;
+}
+
+.videoBtec{
+    height:31rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.textoVideo{
+    text-align: center;
+    margin-top: 1rem;
+}
