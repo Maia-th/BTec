@@ -63,11 +63,13 @@
   top: 0;
   background-color: var(--btecBlue);
 }
-
+.Navegacao .Menu-Mobile .menu-Icon .logo {
+  display: flex;
+  align-items: center;
+}
 .Navegacao .Menu-Mobile .menu-Icon .logo img {
-  width: 1rem;
+  width: 6rem;
   margin-left: 2rem;
-  margin-top: 0.2rem;
 }
 
 .Navegacao .Menu-Mobile .menu-Icon .mIcon {
@@ -130,7 +132,7 @@
 }
 
 .Navegacao .Menu-Mobile .area_menu #Menu-Open ul {
-  margin: 3.5rem 0 1.5rem 0;
+  margin: 4rem 0 1.5rem 0;
   padding: 0;
 }
 

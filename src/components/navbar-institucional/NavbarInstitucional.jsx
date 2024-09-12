@@ -1,35 +1,37 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "./Navbar.css";
 import logo from "../../assets/images/logoBranco.svg";
+import menuShow from "../../utils/menu-show/menuShow"
 
 function navbarInst() {
   return (
     <section className="Navegacao">
       <div className="Menu-Desktop">
         <div className="logo">
-          <a href="#">
+          <Link to="/">
             <img src={logo} alt="Logo" />
-          </a>
+          </Link>
         </div>
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <a href="#">BTec</a>
+              <Link to="/">BTec</Link>
             </li>
             <li>
-              <a href="#">Processo de Seleção</a>
+              <Link to="/">Processo de Seleção</Link>
             </li>
             <li>
-              <a href="#">PIBTec</a>
+              <Link to="/">PIBTec</Link>
             </li>
             <li>
-              <a href="#">PMBTec</a>
+              <Link to="/">PMBTec</Link>
             </li>
             <li>
-              <a href="#">Startups</a>
+              <Link to="/">Startups</Link>
             </li>
             <li>
-              <a href="#">Conteúdos e Eventos</a>
+              <Link to="/">Conteúdos e Eventos</Link>
             </li>
             <li>
               <button
@@ -46,11 +48,11 @@ function navbarInst() {
       <div id="Mobile" className="Menu-Mobile">
         <div className="menu-Icon">
           <div className="logo">
-            <a href="#">
+            <Link to="/">
               <img src={logo} alt="Logo" />
-            </a>
+            </Link>
           </div>
-          <button className="mIcon" onClick="" title="Icone do Menu Mobile">
+          <button className="mIcon" onClick={menuShow} title="Icone do Menu Mobile">
             <span id="barraMenu"></span>
           </button>
         </div>
@@ -58,34 +60,34 @@ function navbarInst() {
           <nav id="Menu-Open">
             <ul>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   BTec
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   Processo de Seleção
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   PIBTec
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   PMBTec
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   Startups
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   Conteúdos e Eventos
-                </a>
+                </Link>
               </li>
               <li>
                 <button

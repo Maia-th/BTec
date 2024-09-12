@@ -1,32 +1,34 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import "../navbar-institucional/Navbar.css";
 import logo from "../../assets/images/logoBranco.svg";
+import menuShow from "../../utils/menu-show/menuShow"
 
 function navbarAdm() {
   return (
     <section className="Navegacao">
       <div className="Menu-Desktop">
         <div className="logo">
-          <a href="#">
+          <Link to="/">
             <img src={logo} alt="Logo" />
-          </a>
+          </Link>
         </div>
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <a href="#">BTec</a>
+              <Link to="/">BTec</Link>
             </li>
             <li>
-              <a href="#">Startups</a>
+              <Link to="/">Startups</Link>
             </li>
             <li>
-              <a href="#">Monitoramentos</a>
+              <Link to="/">Monitoramentos</Link>
             </li>
             <li>
-              <a href="#">Usuários</a>
+              <Link to="/">Usuários</Link>
             </li>
             <li>
-              <a href="#">Relatórios</a>
+              <Link to="/">Relatórios</Link>
             </li>
             <li>
               <button
@@ -43,11 +45,11 @@ function navbarAdm() {
       <div id="Mobile" className="Menu-Mobile">
         <div className="menu-Icon">
           <div className="logo">
-            <a href="#">
+            <Link to="/">
               <img src={logo} alt="Logo" />
-            </a>
+            </Link>
           </div>
-          <button className="mIcon" onClick="" title="Icone do Menu Mobile">
+          <button className="mIcon" onClick={menuShow} title="Icone do Menu Mobile">
             <span id="barraMenu"></span>
           </button>
         </div>
@@ -55,29 +57,29 @@ function navbarAdm() {
           <nav id="Menu-Open">
             <ul>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   BTec
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   Startups
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   Monitoramentos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   Usuários
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" onClick="">
+                <Link to="/" onClick={menuShow}>
                   Relatórios
-                </a>
+                </Link>
               </li>
               <li>
                 <button

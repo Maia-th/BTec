@@ -1,28 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import NavBar from './components/navbar-institucional/NavbarInstitucional';
-import HeaderBtec from './components/header-btec/HeaderBtec';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/global.css';
 import './styles/variables.css';
-import Parceiros from './components/parceiros/Parceiros';
-import Numeros from './components/numeros/Numeros'
-import Programas from './components/programas/Programas'
-import Footer from './components/footer/Footer';
-import Itabira from './components/itabira/Itabira';
-import Missao from './components/missao/Missao';
-import QuemSomos from './components/quemSomos/QuemSomos';
+import Btec from './pages/btec/Btec';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>  
-    <NavBar /> 
-    <HeaderBtec/>
-    <Itabira/>
-    <Programas/>
-    <Numeros/>
-    <Parceiros/>
-    <QuemSomos/>
-    <Missao/>
-    <Footer/>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Btec />} />
+    </Routes>
+  </BrowserRouter>
 );
