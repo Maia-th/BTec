@@ -27,7 +27,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
       <div className="divEndereco">
         <div>
           <p className="titulo">Espaço Físico</p>

@@ -1,16 +1,18 @@
 .divContainer{
     display: flex;
     flex-direction:row;
-    justify-content:space-between;
+    justify-content:center;
     flex-wrap: wrap;
-    padding: 5%;
     background-color: var(--btecGray);
+    padding: 5%;
+    gap: 2%;
 }
 
 .divMissao{
     display: flex;
     flex-direction:column;
-    width: 23rem;
+    width: 25rem;
+    
 }
 
 .num{
