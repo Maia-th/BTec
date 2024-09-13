@@ -58,3 +58,16 @@ li {
   list-style: none;
   text-decoration: none;
 }
+
+@media (max-width: 1507px) {
+    h1{
+        font-size: 2.9rem;
+    }
+    
+    h2{
+        font-size: 2.52rem;
+    }
+    h3{
+        font-size: 2.33rem;
+    }
+}

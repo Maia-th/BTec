@@ -3,7 +3,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 2.5rem 5rem;
+    padding: 1.5rem 5rem 2.5rem 5rem;
 }
 
 .sectionParceiros h2 {
@@ -19,6 +19,5 @@
 }
 
 .sectionParceiros .imagens img {
-    height: 4rem;
     padding: 0 1.5rem;
 }

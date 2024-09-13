@@ -34,13 +34,7 @@ function navbarInst() {
               <Link to="/">Conteúdos e Eventos</Link>
             </li>
             <li>
-              <button
-                className="SigBTec"
-                onClick=""
-                title="Sistema de gerenciamento"
-              >
-                LOGIN
-              </button>
+              <Link className="buttonLink" to="/">LOGIN</Link>
             </li>
           </ul>
         </nav>
