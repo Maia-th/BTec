@@ -47,8 +47,21 @@
     font-weight: bold;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1388px) {
     .divEndereco{
         width: 100%;
+    }
+    .footer{
+        padding: 0 5rem;
+    }
+}
+
+@media  (max-width: 1120px){
+    .divEndereco{
+        visibility: hidden;
+    }
+    .divContatos{
+        margin-left: 0;
+        margin-right: 0;
     }
 }

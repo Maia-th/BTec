@@ -1,18 +1,17 @@
 .divContainer{
     display: flex;
     flex-direction:row;
-    justify-content:center;
+    justify-content:space-around;
     flex-wrap: wrap;
     background-color: var(--btecGray);
-    padding: 5%;
-    gap: 2%;
+    padding: 2.5rem 10rem;
 }
 
 .divMissao{
     display: flex;
     flex-direction:column;
-    width: 25rem;
-    
+    width: 30%;
+    min-width: 20rem;
 }
 
 .num{
@@ -26,4 +25,10 @@
 
 .num {
     color: white;
+}
+
+@media (max-width: 1388px) {
+    .divContainer{
+        padding: 2.5rem 5rem;
+    }
 }
