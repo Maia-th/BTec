@@ -19,8 +19,8 @@ function programas (){
             <article className="PMBTec">
                 <div className="info">
                     <h3>Programa de Mentoria</h3>
-                    <p>O PMBTec (Programa de Mentoria da BTec) consiste no programa de mentoria para empreendores que necessitam de um acompanhamento em seu negócio. A mentoria tem duração de 6 a 8 sessões, a depender dos objetivos traçados entre mentor e mentorado.</p>
-                    <button>Conteúdos e eventos</button>
+                    <p>O PMBTec (Programa de Mentoria da BTec) corresponde a um processo de desenvolvimento profissional para empreendedores que necessitam de um acompanhamento em seu negócio, com base em planejamentos pré-estabelecidos ou ações situacionais, orientado por um mentor profissional. </p>
+                    <button>Inscreva-se no PMBTec</button>
                 </div>
                 <img src={mentoria} alt="Livros" />
             </article>

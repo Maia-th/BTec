@@ -6,7 +6,7 @@
   color: var(--white);
 }
 
-.Navegacao nav .SigBTec {
+.Navegacao nav .SigBTec, .Navegacao nav .buttonLink {
   background-color: transparent;
   border: solid 0.1rem var(--btecGray);
   border-radius: 1.5rem;
@@ -23,7 +23,7 @@
   left: 0;
   display: none;
   align-items: center;
-  padding: 0.38rem 5rem;
+  padding: 0.38rem 10rem;
   justify-content: space-between;
   background-color: var(--btecBlue);
   z-index: 7;
@@ -48,6 +48,14 @@
   color: var(--btecLaranja);
 }
 
+.Navegacao .Menu-Desktop .Desktop-Nav ul li .buttonLink {
+  margin-right: 0;
+}
+
+.Navegacao .Menu-Desktop .Desktop-Nav ul li .buttonLink:hover{
+  color: var(--white);
+}
+
 /* Menu Mobile */
 .Navegacao {
   height: 3rem;
@@ -69,13 +77,15 @@
 }
 .Navegacao .Menu-Mobile .menu-Icon .logo img {
   width: 6rem;
+  justify-content: center;
+  margin-top: 0.5rem;
   margin-left: 2rem;
 }
 
 .Navegacao .Menu-Mobile .menu-Icon .mIcon {
   display: flex;
   margin: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   border: none;
   background: none;
   cursor: pointer;
@@ -140,7 +150,13 @@
   margin-top: 1.5rem;
 }
 
-@media (min-width: 1020px) {
+@media (max-width: 1667px) {
+  .Navegacao .Menu-Desktop{
+      padding: 0.38rem  5rem;
+  }
+}
+
+@media (min-width: 1281px) {
   .Navegacao .Menu-Mobile {
     display: none;
   }

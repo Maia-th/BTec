@@ -47,13 +47,17 @@
     font-weight: bold;
 }
 
+@media (max-width: 1667px) {
+    .footer{
+        padding: 0 5rem;
+    }
+}
+
 @media (max-width: 1388px) {
     .divEndereco{
         width: 100%;
     }
-    .footer{
-        padding: 0 5rem;
-    }
+    
 }
 
 @media  (max-width: 1120px){
