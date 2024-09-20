@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeaderBtec.css"
-import logo from "../../assets/images/logoBranco.svg";
+import logo from "../../../assets/images/logoBranco.svg";
 
 function headerBtec() {
     return (

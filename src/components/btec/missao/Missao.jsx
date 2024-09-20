@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Missao.css";
-import '../../styles/global.css';
-import fundoImagem from './fundoNumero.svg';
+import '../../../styles/global.css';
+
 function Missao() {
     return (
         <div className='divContainer'>
