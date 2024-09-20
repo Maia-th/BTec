@@ -151,12 +151,15 @@
 }
 
 @media (max-width: 1667px) {
-  .Navegacao .Menu-Desktop{
-      padding: 0.38rem  5rem;
+  .Navegacao nav .SigBTec, .Navegacao nav .buttonLink {
+    padding: 0.3rem 1.1rem;
+  }
+  .Navegacao .Menu-Desktop .Desktop-Nav ul li a {
+    margin-right: 1.1rem;
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1343px) {
   .Navegacao .Menu-Mobile {
     display: none;
   }

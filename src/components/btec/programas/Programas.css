@@ -12,25 +12,24 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   margin-top: 2.5rem;
   gap: 4rem;
 }
 
-.programasSection .PMBTec {
-  margin-top: 6rem;
-  text-align: right;
-}
-
 .programasSection .PIBTec img,
 .programasSection .PMBTec img {
-  width: 50rem;
-  max-width: 50%;
+  width: 35rem;
+  max-width: 40%;
 }
 
 .programasSection .PIBTec .info,
 .programasSection .PMBTec .info {
-  width: 40rem;
-  max-width: 40%;
+  width: 45rem;
+  max-width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .programasSection .PIBTec .info p,
@@ -42,13 +41,14 @@
   color: var(--white);
   background-color: var(--btecBlue);
   border: none;
-  border-radius: 2rem;
-  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  padding: 0.8rem 1rem;
   cursor: pointer;
 }
 
-@media (max-width: 1667px) {
-  .programasSection{
-      padding: 2.5rem 5rem;
-  }
+@media (max-width: 1625px) {
+.programasSection .PIBTec .info,
+.programasSection .PMBTec .info {
+  max-width: 50%;
+}
 }

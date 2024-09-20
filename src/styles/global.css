@@ -59,15 +59,19 @@ li {
   text-decoration: none;
 }
 
-@media (max-width: 1507px) {
+@media (max-width: 1644px) {
     h1{
-        font-size: 2.9rem;
+        font-size: 2.8rem;
     }
     
     h2{
-        font-size: 2.52rem;
+        font-size: 2.42rem;
     }
     h3{
-        font-size: 2.33rem;
+        font-size: 2.23rem;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 400;
     }
 }
