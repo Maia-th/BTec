@@ -1,0 +1,26 @@
+.headerBtec {
+    display: flex;
+    max-height: 40dvh;
+    padding: 5rem 10rem;
+    background-color: var(--btecBlue);
+    color: var(--white);
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.headerBtec img {
+    margin-left:1rem ;
+    max-width: 35%;
+    width: 45rem;
+}
+
+@media (max-width: 1667px) {
+    .headerBtec{
+        padding: 5 10rem;
+    }
+}

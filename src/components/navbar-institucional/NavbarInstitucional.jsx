@@ -19,7 +19,7 @@ function navbarInst() {
               <Link to="/">BTec</Link>
             </li>
             <li>
-              <Link to="/">Processo de Seleção</Link>
+              <Link to="../../pages/selecao/Selecao.jsx">Processo de Seleção</Link>
             </li>
             <li>
               <Link to="/">PIBTec</Link>

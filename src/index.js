@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/global.css';
 import './styles/variables.css';
-import Btec from './pages/btec/Btec';
+import Btec from './pages/selecao/Selecao';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

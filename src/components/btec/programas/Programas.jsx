@@ -1,7 +1,7 @@
 import React from "react";
 import './Programas.css'
-import incubacao from "../../assets/images/btecIncubacao.svg";
-import mentoria from "../../assets/images/btecMentoria.svg";
+import incubacao from "../../../assets/images/btecIncubacao.svg";
+import mentoria from "../../../assets/images/btecMentoria.svg";
 
 function programas (){
     return(
