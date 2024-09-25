@@ -1,4 +1,4 @@
-.headerBtec {
+.headerSelecao {
     display: flex;
     max-height: 40dvh;
     padding: 5rem 10rem;
@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-.headerBtec img {
+.headerSelecao img {
     margin-left:1rem ;
     max-width: 35%;
     width: 45rem;
