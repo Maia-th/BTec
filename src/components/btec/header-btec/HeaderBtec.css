@@ -1,28 +1,41 @@
 .headerBtec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 33rem;
-    max-height: 40dvh;
-    padding: 0 10rem;
-    background-color: var(--btecBlue);
-    color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  max-height: 40dvh;
+  padding: 10rem;
+  background-color: var(--btecBlue);
+  color: var(--white);
 }
 
 .headerBtec .titulo {
-    display: flex;
-    max-width: 60%;
+  display: flex;
+  max-width: 50%;
+  text-align: center;
 }
 
 .headerBtec img {
-    margin-left:1rem ;
-    max-width: 35%;
-    width: 45rem;
+  margin-left: 2rem;
+  max-width: 40%;
+  width: 45rem;
 }
 
-@media (max-width: 1667px) {
-    .headerBtec{
-        padding: 0 5rem;
-    }
+@media (max-width: 1895px) {
+  .headerBtec .titulo {
+    max-width: 55%;
+  }
+}
+
+@media (max-width: 1644px) {
+  .headerBtec img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 1460px) {
+  .headerBtec .titulo {
+    max-width: 56%;
+  }
 }

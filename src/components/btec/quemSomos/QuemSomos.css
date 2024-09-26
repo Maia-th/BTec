@@ -26,9 +26,3 @@
     text-align: center;
     margin-top: 1rem;
 }
-
-@media (max-width: 1667px) {
-    .divSomos{
-        padding: 2.5rem 5rem;
-    }
-}

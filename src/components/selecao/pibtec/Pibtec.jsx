@@ -6,7 +6,7 @@ function Pibtec() {
     return (
         <div className="pibtecDiv">
             <div className="div1">
-                <h1>Programa de incubação da BTec (PIBTec)</h1>
+                <h2>Programa de incubação da BTec (PIBTec)</h2>
                 <p>O PIBTec (Programa de Incubação da BTec) é o coração da BTec, o programa tem o objetivo de auxiliar o desenvolvimento de novos negócios de base tecnológica (não escaláveis e escaláveis) por meio da jornada do empreendedor, com foco na geração de resultados inovadores e atendimento das demandas locais. A jornada que o empreendedor irá percorrer está dividida em três grandes etapas e tem duração entre um a três anos. O PIBTec é gratuito.</p>
                 <img className="imagemPibtec" src={processos} alt="processos" />
             </div>

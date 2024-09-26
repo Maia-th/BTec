@@ -8,8 +8,8 @@
 
 .Navegacao nav .SigBTec, .Navegacao nav .buttonLink {
   background-color: transparent;
-  border: solid 0.1rem var(--btecGray);
-  border-radius: 1.5rem;
+  border: solid 0.15rem var(--btecGray);
+  border-radius: 2rem;
   color: var(--white);
   padding: 0.3rem 1.5rem;
   cursor: pointer;
@@ -151,12 +151,15 @@
 }
 
 @media (max-width: 1667px) {
-  .Navegacao .Menu-Desktop{
-      padding: 0.38rem  5rem;
+  .Navegacao nav .SigBTec, .Navegacao nav .buttonLink {
+    padding: 0.3rem 1rem;
+  }
+  .Navegacao .Menu-Desktop .Desktop-Nav ul li a {
+    margin-right: 1rem;
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1343px) {
   .Navegacao .Menu-Mobile {
     display: none;
   }

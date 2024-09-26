@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/images/logoBranco.svg";
 import menuShow from "../../utils/menu-show/menuShow";
@@ -19,10 +19,10 @@ function navbarInst() {
               <Link to="/">BTec</Link>
             </li>
             <li>
-              <Link to="../../pages/selecao/Selecao.jsx">Processo de Seleção</Link>
+              <Link to="/Selecao">Processo de Seleção</Link>
             </li>
             <li>
-              <Link to="/">PIBTec</Link>
+              <Link to="/PIBTec">PIBTec</Link>
             </li>
             <li>
               <Link to="/">PMBTec</Link>
@@ -34,7 +34,9 @@ function navbarInst() {
               <Link to="/">Conteúdos e Eventos</Link>
             </li>
             <li>
-              <Link className="buttonLink" to="/">LOGIN</Link>
+              <Link className="buttonLink" to="/">
+                LOGIN
+              </Link>
             </li>
           </ul>
         </nav>
@@ -46,7 +48,11 @@ function navbarInst() {
               <img src={logo} alt="Logo" />
             </Link>
           </div>
-          <button className="mIcon" onClick={menuShow} title="Icone do Menu Mobile">
+          <button
+            className="mIcon"
+            onClick={menuShow}
+            title="Icone do Menu Mobile"
+          >
             <span id="barraMenu"></span>
           </button>
         </div>
@@ -59,12 +65,12 @@ function navbarInst() {
                 </Link>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <Link to="/Selecao" onClick={menuShow}>
                   Processo de Seleção
                 </Link>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <Link to="/PIBTec" onClick={menuShow}>
                   PIBTec
                 </Link>
               </li>
@@ -84,13 +90,9 @@ function navbarInst() {
                 </Link>
               </li>
               <li>
-                <button
-                  className="SigBTec"
-                  onClick=""
-                  title="Sistema de gerenciamento"
-                >
+                <Link className="buttonLink" to="/" onClick={menuShow}>
                   LOGIN
-                </button>
+                </Link>
               </li>
             </ul>
           </nav>
