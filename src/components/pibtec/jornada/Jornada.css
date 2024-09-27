@@ -1,0 +1,52 @@
+.sectionJornada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem 10rem;
+  gap: 2rem;
+}
+
+.sectionJornada .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 5rem;
+}
+
+.sectionJornada .cards .cardEtapa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30rem;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sectionJornada .cards .cardEtapa.gray {
+    background-color: var(--btecGray);
+    color: var(--btecDarkBlue);
+}
+
+.sectionJornada .cards .cardEtapa.blue {
+    background-color: var(--btecBlue);
+    color: var(--white);
+}
+
+.sectionJornada .cards .cardEtapa ul li {
+    list-style: square;
+    margin-left: 1rem;
+}
+
+.sectionJornada .cards .cardEtapa ul li::marker {
+    color: var(--btecLaranja);
+}
+
+@media (max-width: 1644px) {
+    .sectionJornada .cards .cardEtapa {
+        width: 28rem;
+    }
+}
