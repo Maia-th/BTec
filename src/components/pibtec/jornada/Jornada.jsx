@@ -38,7 +38,7 @@ export default function Jornada() {
             <li>Mentorias em gestão.</li>
           </ul>
         </div>
-        <div className="cardEtapa gray">
+        <div className="cardEtapa blue">
           <h3>Tração</h3>
           <p>
           Foco no crescimento e expansão, aumentando a base de clientes e otimizando processos, com suporte para captação de investimentos.
@@ -50,7 +50,7 @@ export default function Jornada() {
             <li>Captação de investimentos.</li>
           </ul>
         </div>
-        <div className="cardEtapa blue">
+        <div className="cardEtapa gray">
           <h3>Escala</h3>
           <p>
           Consolidação e expansão sustentável do negócio, explorando novos mercados e implementando práticas de governança corporativa.
