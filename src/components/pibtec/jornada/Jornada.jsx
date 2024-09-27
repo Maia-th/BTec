@@ -13,7 +13,7 @@ export default function Jornada() {
         mentorias para impulsionar o desenvolvimento de suas startups.
       </p>
       <article className="cards">
-        <div className="cardEtapa blue">
+        <div className="cardEtapa gray">
           <h3>Ideação e Validação</h3>
           <p>
             Desenvolvimento e refinamento de ideias inovadoras, com foco em
@@ -26,7 +26,7 @@ export default function Jornada() {
             <li>Desenvolvimento de MVPs.</li>
           </ul>
         </div>
-        <div className="cardEtapa gray">
+        <div className="cardEtapa blue">
           <h3>Operação</h3>
           <p>
           Estruturação do negócio e implementação de processos eficientes, com apoio em planos de negócios e estratégias de marketing.
@@ -38,7 +38,7 @@ export default function Jornada() {
             <li>Mentorias em gestão.</li>
           </ul>
         </div>
-        <div className="cardEtapa blue">
+        <div className="cardEtapa gray">
           <h3>Tração</h3>
           <p>
           Foco no crescimento e expansão, aumentando a base de clientes e otimizando processos, com suporte para captação de investimentos.
@@ -50,7 +50,7 @@ export default function Jornada() {
             <li>Captação de investimentos.</li>
           </ul>
         </div>
-        <div className="cardEtapa gray">
+        <div className="cardEtapa blue">
           <h3>Escala</h3>
           <p>
           Consolidação e expansão sustentável do negócio, explorando novos mercados e implementando práticas de governança corporativa.

@@ -17,13 +17,17 @@
 
 .sectionJornada .cards .cardEtapa {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 30rem;
+    width: 28rem;
+    min-height: 33rem;
     gap: 1rem;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sectionJornada .cards .cardEtapa p {
+    text-align: justify;
 }
 
 .sectionJornada .cards .cardEtapa.gray {
@@ -43,10 +47,4 @@
 
 .sectionJornada .cards .cardEtapa ul li::marker {
     color: var(--btecLaranja);
-}
-
-@media (max-width: 1644px) {
-    .sectionJornada .cards .cardEtapa {
-        width: 28rem;
-    }
 }
