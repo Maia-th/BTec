@@ -1,0 +1,55 @@
+.HeaderStartup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  max-height: 40dvh;
+  padding: 10rem;
+  background-color: var(--btecBlue);
+  color: var(--white);
+}
+
+.HeaderStartup .TextoStartup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 58rem;
+  max-width: 60%;
+}
+
+.HeaderStartup .TextoStartup h1{
+ text-align: center;
+}
+
+.HeaderStartup .TextoStartup p{
+  text-align: justify;
+  max-width: 55rem;
+}
+
+.HeaderStartup .TextoStartup button {
+    background-color: var(--btecLaranja);
+    width: 12rem;
+    color: var(--white);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+.HeaderStartup img {
+  width: 40rem;
+  margin-left: 2rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1644px) {
+  .HeaderStartup img {
+    max-width: 40%;
+  }
+  .HeaderStartup .TextoStartup {
+    max-width: 57%;
+  }
+}
