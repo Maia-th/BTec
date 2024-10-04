@@ -9,8 +9,6 @@ import PMBTec from './pages/pmbtec/PMBTec';
 import Selecao from './pages/selecao/Selecao';
 import Startup from './pages/startup/Startup';
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
