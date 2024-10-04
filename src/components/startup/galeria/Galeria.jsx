@@ -11,12 +11,18 @@ import Foto08 from "../../../assets/images/Fotos/foto08.svg";
 import Foto09 from "../../../assets/images/Fotos/foto09.svg";
 import Foto10 from "../../../assets/images/Fotos/foto10.svg";
 import Foto11 from "../../../assets/images/Fotos/foto11.svg";
+import Foto12 from "../../../assets/images/Fotos/foto12.svg";
+import Foto13 from "../../../assets/images/Fotos/foto13.svg";
+import Foto14 from "../../../assets/images/Fotos/foto14.svg";
 
 export default function Galeria() {
     return(
         <section className="sectionGaleria">
             <h2>Galeria de Fotos</h2>
             <article className="fotos">
+                <img src={Foto12} alt="Foto 12" />
+                <img src={Foto13} alt="Foto 13" />
+                <img src={Foto14} alt="Foto 14" />
                 <img src={Foto01} alt="Foto 01" />
                 <img src={Foto02} alt="Foto 02" />
                 <img src={Foto03} alt="Foto 03" />
