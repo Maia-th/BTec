@@ -1,0 +1,41 @@
+.sectionStartup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 10rem;
+}
+
+.sectionStartup .cardsStartups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 4rem;
+}
+
+.sectionStartup .cardsStartups .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 16rem;
+    min-height: 18rem;
+    padding: 1.5rem 0.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    background-color: var(--btecGray);
+    color: var(--btecDarkBlue);
+}
+
+.sectionStartup .cardsStartups .card h3 {
+    font-size: 1.7rem;
+}
+
+.sectionStartup .cardsStartups .card img {
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+}
+

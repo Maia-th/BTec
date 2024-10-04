@@ -1,0 +1,22 @@
+.sectionGaleria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 10rem;
+    background-color: var(--btecGray);
+}
+
+.sectionGaleria .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.sectionGaleria .fotos  img {
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}

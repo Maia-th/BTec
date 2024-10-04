@@ -28,7 +28,7 @@ function navbarInst() {
               <Link to="/">PMBTec</Link>
             </li>
             <li>
-              <Link to="/">Startups</Link>
+              <Link to="/Startup">Startups</Link>
             </li>
             <li>
               <Link to="/">Conteúdos e Eventos</Link>
@@ -80,7 +80,7 @@ function navbarInst() {
                 </Link>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <Link to="/Startup" onClick={menuShow}>
                   Startups
                 </Link>
               </li>
