@@ -18,8 +18,8 @@ root.render(
       <Route path="/" element={<Btec />} />
       <Route path="/Selecao" element={<Selecao />} />
       <Route path="/PIBTec" element={<PIBTec />} />
-      <Route path="/Startup" element={<Startup />} />
       <Route path="/PMBTec" element={<PMBTec />} />
+      <Route path="/Startup" element={<Startup />} />
     </Routes>
   </BrowserRouter>
 );
