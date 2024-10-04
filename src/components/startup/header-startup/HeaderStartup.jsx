@@ -10,7 +10,7 @@ export default function HeaderStartup() {
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque quidem natus culpa consectetur, perferendis suscipit soluta maiores odio impedit? Aperiam deleniti placeat repellat molestias blanditiis laudantium obcaecati aliquid laborum.
         </p>
-        <button>Participe do PIBtec</button>
+        <button>Participe do PIBTec</button>
       </div>
       <img src={PIBTecLogo} alt="Logo PIBTec" />
     </header>
