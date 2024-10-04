@@ -1,0 +1,54 @@
+.pmbtecDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    color: var(--btecDarkBlue);
+}
+.pmbtecDiv .div1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 10rem ;
+}
+
+.pmbtecDiv .div1 p{
+    margin-top: 1rem;
+}
+
+.botoesPm{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.botoesPm .botaoEdital{
+    background-color: var(--btecBlue);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.pmbtecDiv .div2{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--btecGray);
+    padding: 3rem 10rem ;
+    
+}
+.botoesPm .botaoInscricao{
+    background-color: var(--btecLaranja);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-left: 2rem;
+}
+
+.imagemPmbtec{
+    width: 90%;
+    margin-top: 2rem;
+}

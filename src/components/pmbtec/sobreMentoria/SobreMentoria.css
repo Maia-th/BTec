@@ -1,0 +1,20 @@
+.divSobreMentoria{
+    padding: 5rem 10rem;
+}
+
+.divSobreMentoria .tituloSobre{
+    text-align: center;
+}
+
+.divSobreMentoria .pSobre{
+    margin-top: 2rem;
+}
+.divSobreMentoria .divImg{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.divSobreMentoria .etapasMentoria{
+    width: 60%;
+}
