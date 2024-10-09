@@ -25,7 +25,7 @@ function navbarInst() {
               <Link to="/PIBTec">PIBTec</Link>
             </li>
             <li>
-              <Link to="/">PMBTec</Link>
+              <Link to="/PMBTec">PMBTec</Link>
             </li>
             <li>
               <Link to="/Startup">Startups</Link>
@@ -75,7 +75,7 @@ function navbarInst() {
                 </Link>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <Link to="/PMBTec" onClick={menuShow}>
                   PMBTec
                 </Link>
               </li>

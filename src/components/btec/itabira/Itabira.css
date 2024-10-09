@@ -11,4 +11,15 @@
     display: flex;
     flex-direction:column;
     align-items: center;
+    /* background-image: url("fotoItabira.png"); */
 }
+
+.daIdeia{
+    color: white;
+    text-align: center;
+    background-image: url("fotoItabira.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 1%;
+}   
