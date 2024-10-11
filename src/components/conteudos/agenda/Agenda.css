@@ -12,7 +12,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
+    max-width: 95rem;
     margin: 3rem auto 2rem;
 }
 
