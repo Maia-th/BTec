@@ -1,0 +1,25 @@
+.sectionAgenda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2.5rem 10rem;
+}
+
+.sectionAgenda  .agenda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3rem auto 2rem;
+}
+
+.sectionAgenda .agenda iframe {
+    border-radius: 0.3rem;
+    width:100%;
+    border: 0.12rem solid var(--btecBlue);
+    height:40rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}

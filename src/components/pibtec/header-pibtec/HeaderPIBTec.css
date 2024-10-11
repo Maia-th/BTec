@@ -28,13 +28,7 @@
 }
 
 .HeaderPIBTec img {
-  max-width: 40%;
+  max-width: 50%;
   margin-left: 1rem;
   border-radius: 1rem;
-}
-
-@media (max-width: 1460px) {
-  .HeaderPIBTec img {
-    max-width: 48%;
-  }
 }
