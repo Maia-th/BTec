@@ -1,32 +1,26 @@
-.sectionVideos{
+.sectionPodcast {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
     align-items: center;
     padding: 2.5rem 10rem;
+    background-color: var(--btecGray);
 }
 
-.sectionVideos .videosYouTube {
+.sectionPodcast .spotify{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 3rem auto 2rem;
-    gap: 1.5rem 3.5rem;
+    gap: 1.5rem;
 }
 
-.sectionVideos .videosYouTube .videoDiv{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width:24.5rem;
-}
-
-.sectionVideos .videosYouTube .videoDiv iframe{
+.sectionPodcast .spotify iframe {
     border-radius: 1rem;
-    width:420px;
-    height:220px;
+    width:100%;
+    height:22rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
