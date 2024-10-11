@@ -31,7 +31,7 @@ function navbarInst() {
               <Link to="/Startup">Startups</Link>
             </li>
             <li>
-              <Link to="/">Conteúdos e Eventos</Link>
+              <Link to="/Conteudos">Conteúdos e Eventos</Link>
             </li>
             <li>
               <Link className="buttonLink" to="/">
@@ -85,7 +85,7 @@ function navbarInst() {
                 </Link>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <Link to="/Conteudos" onClick={menuShow}>
                   Conteúdos e Eventos
                 </Link>
               </li>
