@@ -21,6 +21,8 @@
 .programasSection .PMBTec img {
   width: 35rem;
   max-width: 40%;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
 
 .programasSection .PIBTec .info,
@@ -50,5 +52,10 @@
 .programasSection .PIBTec .info,
 .programasSection .PMBTec .info {
   max-width: 50%;
+}
+.programasSection .PIBTec img,
+.programasSection .PMBTec img {
+  height: 24rem;
+  object-fit: cover;
 }
 }
