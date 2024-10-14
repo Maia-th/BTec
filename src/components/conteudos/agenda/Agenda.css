@@ -24,3 +24,16 @@
     height:40rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 1342px) {
+    .sectionAgenda {
+      padding: 2.5rem 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .sectionAgenda {
+      padding: 2.5rem 2rem;
+    }
+    
+}
