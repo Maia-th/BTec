@@ -1,0 +1,52 @@
+.sectionArtigos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 10rem;
+}
+
+.sectionArtigos .artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 3rem auto 2rem;
+    gap: 2rem;
+}
+
+.sectionArtigos .artigos .artigoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    width: 20rem;
+    height: auto;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+.sectionArtigos .artigos .artigoDiv img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.sectionArtigos .artigos .artigoDiv .divTitulo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionArtigos .botaoVerArtigos {
+    background-color: var(--btecBlue);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
