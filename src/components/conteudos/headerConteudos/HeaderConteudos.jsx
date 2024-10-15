@@ -1,20 +1,22 @@
 import React from "react";
-import "./HeaderConteudos.css"
+import "./HeaderConteudos.css";
 import logo from "../../../assets/images/logoBranco.svg";
 
 function HeaderConteudos() {
-    return (
-        <header className="headerConteudos">
-            <div className="titulo">
-                <h1>Conteúdos e Eventos</h1>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
-            </p>
-            </div>
-            
-            <img src={logo} alt="Logo" />
-        </header>
-    );
+  return (
+    <header className="headerConteudos">
+      <div className="titulo">
+        <h1>Conteúdos e Eventos</h1>
+        <p>
+          A BTec produz de forma constante conteúdos gratuitos e disponíveis a
+          todos. Além disso, a BTec possui uma agenda de eventos que você também
+          pode aproveitar. Acesse e fique por dentro dos assuntos e novidades.
+        </p>
+      </div>
+
+      <img src={logo} alt="Logo" />
+    </header>
+  );
 }
 
 export default HeaderConteudos;

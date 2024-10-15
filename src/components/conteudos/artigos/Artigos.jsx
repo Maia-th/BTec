@@ -5,7 +5,7 @@ import capa from "./capaArtigos.png";
 export default function Artigos() {
   return (
     <section className="sectionArtigos">
-      <h2>Artigos da Btec </h2>
+      <h2>Artigos da BTec </h2>
       <div className="artigos">
         <div className="artigoDiv">
           <img className="ImagemArtigo" src={capa} alt="capa do Artigo" />
@@ -39,8 +39,8 @@ export default function Artigos() {
         </div>
       </div>
       <a className="botaoVerArtigos" href="">
-                    Acessar mais artigos 
-    </a>
+        Acessar mais artigos
+      </a>
     </section>
   );
 }
