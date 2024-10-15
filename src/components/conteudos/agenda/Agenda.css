@@ -12,7 +12,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
+    max-width: 95rem;
     margin: 3rem auto 2rem;
 }
 
@@ -20,6 +21,25 @@
     border-radius: 0.3rem;
     width:100%;
     border: 0.12rem solid var(--btecBlue);
-    height:40rem;
+    height:35rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1644px) {
+    .sectionAgenda .agenda iframe {
+        height:25rem;
+    }
+}
+
+@media (max-width: 1342px) {
+    .sectionAgenda {
+      padding: 2.5rem 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .sectionAgenda {
+      padding: 2.5rem 2rem;
+    }
+    
 }

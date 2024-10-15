@@ -30,8 +30,46 @@
   }
 }
 
-@media (max-width: 1583px) {
-    .sectionVideos .videosYouTube .videoDiv iframe {
-      width: 310px;
-    }
+@media (min-width: 1433px) and (max-width: 1583px) {
+  .sectionVideos .videosYouTube .videoDiv iframe {
+    width: 350px;
   }
+}
+
+@media (min-width: 1343px) and (max-width: 1433px) {
+  .sectionVideos .videosYouTube .videoDiv iframe {
+    width: 310px;
+  }
+}
+
+@media (max-width: 1342px) {
+  .sectionVideos {
+    padding: 2.5rem 3rem;
+  }
+  .sectionVideos .videosYouTube .videoDiv iframe {
+    width: 320px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1119px) {
+  .sectionVideos .videosYouTube .videoDiv iframe {
+    width: 350px;
+  }
+}
+
+@media (max-width: 735px) {
+  .sectionVideos .videosYouTube .videoDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .sectionVideos .videosYouTube .videoDiv iframe {
+    width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .sectionVideos {
+    padding: 2.5rem 2rem;
+  }
+}

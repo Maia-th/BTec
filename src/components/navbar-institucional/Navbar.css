@@ -137,12 +137,13 @@
 .Navegacao .Menu-Mobile .area_menu #Menu-Open {
   display: none;
   width: 0vw;
+  border-radius: 0 0 1rem 1rem;
   background-color: var(--btecBlue);
   overflow: hidden;
 }
 
 .Navegacao .Menu-Mobile .area_menu #Menu-Open ul {
-  margin: 4rem 0 1.5rem 0;
+  margin: 5rem 0 1.5rem 0;
   padding: 0;
 }
 
@@ -168,5 +169,14 @@
   }
   .Navegacao {
     height: 4.7rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1342px) {
+  .Navegacao .Menu-Mobile .menu-Icon .logo img {
+    margin-left: 3rem;
+  }
+  .Navegacao .Menu-Mobile .menu-Icon .mIcon {
+    padding: 0.5rem 3rem;
   }
 }
