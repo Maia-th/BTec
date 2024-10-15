@@ -40,12 +40,7 @@
 
 .HeaderPMBTec img {
   max-width: 40%;
+  width: 30rem;
+  height:fit-content;
   margin-left: 1rem;
-  border-radius: 1rem;
-}
-
-@media (max-width: 1460px) {
-  .HeaderPMBTec img {
-    max-width: 48%;
-  }
 }

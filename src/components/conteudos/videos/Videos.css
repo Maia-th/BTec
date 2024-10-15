@@ -6,6 +6,7 @@
   margin: 0 auto;
   align-items: center;
   padding: 2.5rem 10rem;
+  background-color: var(--btecGray);
 }
 
 .sectionVideos .videosYouTube {
