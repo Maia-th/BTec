@@ -6,13 +6,22 @@
   color: var(--white);
 }
 
-.Navegacao nav .SigBTec, .Navegacao nav .buttonLink {
+.Navegacao nav .SigBTec,
+.Navegacao nav .buttonLink {
   background-color: transparent;
-  border: solid 0.15rem var(--btecGray);
+  border: solid 0.13rem var(--btecGray);
   border-radius: 2rem;
   color: var(--white);
-  padding: 0.3rem 1.5rem;
+  padding: 0.2rem 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
+}
+
+.Navegacao nav .SigBTec,
+.Navegacao nav .buttonLink:hover {
+  background-color: var(--btecLaranja);
+  border: solid 0.13rem var(--btecLaranja);
+  color: var(--white);
 }
 
 /* Menu Desktop */
@@ -40,19 +49,40 @@
   font-size: 1.2rem;
 }
 
+.Navegacao .Menu-Desktop .Desktop-Nav ul li a.navLink {
+  color: var(--white);
+  position: relative;
+  text-decoration: none;
+}
+
 .Navegacao .Menu-Desktop .Desktop-Nav ul li a {
   margin-right: 2rem;
 }
 
-.Navegacao .Menu-Desktop .Desktop-Nav ul li a:hover {
-  color: var(--btecLaranja);
+.Navegacao .Menu-Desktop .Desktop-Nav ul li a.navLink:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: var(--btecLaranja);
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.Navegacao .Menu-Desktop .Desktop-Nav ul li a.navLink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .Navegacao .Menu-Desktop .Desktop-Nav ul li .buttonLink {
   margin-right: 0;
 }
 
-.Navegacao .Menu-Desktop .Desktop-Nav ul li .buttonLink:hover{
+.Navegacao .Menu-Desktop .Desktop-Nav ul li .buttonLink:hover {
   color: var(--white);
 }
 
@@ -152,7 +182,8 @@
 }
 
 @media (max-width: 1667px) {
-  .Navegacao nav .SigBTec, .Navegacao nav .buttonLink {
+  .Navegacao nav .SigBTec,
+  .Navegacao nav .buttonLink {
     padding: 0.3rem 1rem;
   }
   .Navegacao .Menu-Desktop .Desktop-Nav ul li a {
