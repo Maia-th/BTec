@@ -10,7 +10,7 @@ export default function HeaderPMBTec() {
         <p>
         O PMBTec (Programa de Mentoria da BTec) consiste no programa de mentoria para empreendores que necessitam de um acompanhamento em seu negócio. A mentoria tem duração  de 4 a 8 sessões, a depender dos objetivos traçados entre mentor e mentorado.
         </p>
-        <a className="botaoInscricao" href="https://forms.gle/nY6gxfj4E25oXxYt6">
+        <a className="botaoInscricaoPMBTec" href="https://forms.gle/nY6gxfj4E25oXxYt6">
           Edital de Seleção
         </a>
       </div>
