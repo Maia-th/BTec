@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 2.5rem 10rem 4rem;
+    padding: 2.5rem 10rem 3rem;
     background-color: var(--btecBlue);
     color: var(--white);
   }
