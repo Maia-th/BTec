@@ -18,13 +18,14 @@
 
 .botaoInscricao{
   background-color: var(--btecLaranja);
-  color: white;
-  width: 15rem;
-  text-align: center;
-  font-weight: 500;
-  border-radius: 2rem;
-  padding: 1rem 2rem;
-  cursor: pointer;
+    width: 12rem;
+    color: var(--white);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 450;
+    cursor: pointer;
+    text-align: center;
 }
 
 .HeaderPMBTec img {
