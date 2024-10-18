@@ -1,0 +1,73 @@
+.etapas.PIBTec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .etapas.PIBTec .etapaCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .etapas.PIBTec .etapaCard .numeroEtapa {
+    color: var(--btecLaranja);
+    border: solid 0.1rem var(--btecLaranja);
+    width: 4rem;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .etapas.PIBTec .etapaCard .numeroEtapa.setaOn {
+    margin-left: 4.3418rem;
+  }
+  
+  .etapas.PIBTec .etapaCard .setaEtapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  
+  .etapas.PIBTec .etapaCard .setaEtapa span {
+    color: var(--btecLaranja);
+    font-size: 4rem;
+    padding-right: 1rem;
+  }
+  .etapas.PIBTec .etapaCard .conteudoEtapa {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-width: 12rem;
+    margin-top: 0.05rem;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: #d9d9d9;
+    border-radius: 0.3rem;
+  }
+  
+  .etapas.PIBTec .etapaCard .conteudoEtapa p {
+    font-size: 1.4rem;
+  }
+  
+  .facaParteComponent .pibtecDiv .div1 {
+    display: none;
+  }
+  
+  @media (max-width: 1644px) {
+    .etapas.PIBTec .etapaCard .numeroEtapa {
+      width: 3rem;
+    }
+    .etapas.PIBTec .etapaCard {
+      padding: 0.5rem;
+    }
+    .etapas.PIBTec .etapaCard .setaEtapa span {
+      padding-right: 0.5rem;
+    }
+    .etapas.PIBTec .etapaCard .numeroEtapa.setaOn {
+      margin-left: 3.8418rem;
+    }
+  }
