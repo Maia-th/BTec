@@ -11,19 +11,9 @@
 .HeaderStartup .TextoStartup {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  width: 58rem;
-  max-width: 60%;
-}
-
-.HeaderStartup .TextoStartup h1{
- text-align: center;
-}
-
-.HeaderStartup .TextoStartup p{
-  text-align: justify;
-  max-width: 55rem;
+  width: 50rem;
+  max-width: 50%;
 }
 
 .HeaderStartup .TextoStartup button {
@@ -38,16 +28,14 @@
 }
 
 .HeaderStartup img {
-  width: 40rem;
-  margin-left: 2rem;
+  width: 37rem;
+  margin-left: 4rem;
   border-radius: 1rem;
 }
 
-@media (max-width: 1644px) {
+@media (max-width: 1465px) {
   .HeaderStartup img {
-    max-width: 40%;
-  }
-  .HeaderStartup .TextoStartup {
-    max-width: 55%;
+    max-width: 46%;
+    margin-left: 2rem;
   }
 }
