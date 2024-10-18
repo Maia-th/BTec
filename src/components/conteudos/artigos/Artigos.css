@@ -12,14 +12,13 @@
     justify-content: center;
     width: 100%;
     margin: 3rem auto 2rem;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .sectionArtigos .artigos .artigoDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 1rem;
     width: 20rem;
     height: auto;
@@ -50,3 +49,15 @@
     padding: 1rem 2rem;
     cursor: pointer;
 }
+
+.sectionArtigos .botaoVerArtigos:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 15ms;
+  }
+
+  @media (max-width: 1823px) {
+    .sectionArtigos .artigos {
+      gap: 5rem;
+    }
+  }
