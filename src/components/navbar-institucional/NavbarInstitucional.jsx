@@ -16,22 +16,22 @@ function navbarInst() {
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link to="/">BTec</Link>
+              <Link className="navLink" to="/">BTec</Link>
             </li>
             <li>
-              <Link to="/Selecao">Processo de Seleção</Link>
+              <Link className="navLink" to="/Selecao">Processo de Seleção</Link>
             </li>
             <li>
-              <Link to="/PIBTec">PIBTec</Link>
+              <Link className="navLink" to="/PIBTec">PIBTec</Link>
             </li>
             <li>
-              <Link to="/PMBTec">PMBTec</Link>
+              <Link className="navLink" to="/PMBTec">PMBTec</Link>
             </li>
             <li>
-              <Link to="/Startup">Startups</Link>
+              <Link className="navLink" to="/Startup">Startups</Link>
             </li>
             <li>
-              <Link to="/Conteudos">Conteúdos e Eventos</Link>
+              <Link className="navLink" to="/Conteudos">Conteúdos e Eventos</Link>
             </li>
             <li>
               <Link className="buttonLink" to="/">

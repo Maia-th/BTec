@@ -1,0 +1,37 @@
+.headerConteudos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2.5rem 10rem 3rem;
+    background-color: var(--btecBlue);
+    color: var(--white);
+  }
+  
+  .headerConteudos .titulo {
+    display: flex;
+    max-width: 50%;
+    
+  }
+  
+  .headerConteudos img {
+    margin-left: 2rem;
+    max-width: 40%;
+    width: 30rem;
+  }
+  
+  @media (max-width: 1895px) {
+    .headerConteudos .titulo {
+      max-width: 55%;
+    }
+  }
+  
+  @media (max-width: 1644px) {
+    .headerConteudos img {
+      max-width: 43%;
+    }
+    .headerConteudos .titulo {
+      max-width: 57%;
+    }
+  }
+  

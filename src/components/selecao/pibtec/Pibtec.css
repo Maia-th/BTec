@@ -30,6 +30,12 @@
     cursor: pointer;
 }
 
+.botoesPib .botaoEdital:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 15ms;
+  }
+
 .pibtecDiv .div2{
     display: flex;
     flex-direction: column;
@@ -46,6 +52,12 @@
     cursor: pointer;
     margin-left: 2rem;
 }
+
+.botoesPib .botaoInscricao:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 15ms;
+  }
 
 .imagemPibtec{
     width: 100%;

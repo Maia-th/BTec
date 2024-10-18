@@ -16,19 +16,19 @@ function navbarStartup() {
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link to="/">BTec</Link>
+              <Link className="navLink" to="/">BTec</Link>
             </li>
             <li>
-              <Link to="/">Jornada do Empreendedor</Link>
+              <Link className="navLink" to="/">Jornada do Empreendedor</Link>
             </li>
             <li>
-              <Link to="/">Monitoramentos</Link>
+              <Link className="navLink" to="/">Monitoramentos</Link>
             </li>
             <li>
-              <Link to="/">Conteúdos e Evento</Link>
+              <Link className="navLink" to="/">Conteúdos e Evento</Link>
             </li>
             <li>
-              <Link to="/">Suporte</Link>
+              <Link className="navLink" to="/">Suporte</Link>
             </li>
             <li>
               <button
