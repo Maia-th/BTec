@@ -1,11 +1,4 @@
 /*GERAL*/
-.Navegacao nav ul {
-  align-items: center;
-}
-.Navegacao nav ul li a {
-  color: var(--white);
-}
-
 .Navegacao nav .SigBTec,
 .Navegacao nav .buttonLink {
   background-color: transparent;
@@ -37,15 +30,25 @@
   background-color: var(--btecBlue);
   z-index: 7;
 }
+
 .Navegacao .Menu-Desktop .logo {
-  height: auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
+
+.Navegacao .Menu-Desktop .logo a {
+  display: flex;
+}
+
 .Navegacao .Menu-Desktop .logo img {
   width: 6.4rem;
 }
 
 .Navegacao .Menu-Desktop .Desktop-Nav ul {
   display: flex;
+  align-items: center;
+
   font-size: 1.2rem;
 }
 
@@ -87,8 +90,8 @@
 }
 
 /* Menu Mobile */
-.Navegacao {
-  height: 3rem;
+.Navegacao{
+  height: 4.13575rem;
 }
 
 .Navegacao .Menu-Mobile .menu-Icon {
@@ -101,15 +104,15 @@
   top: 0;
   background-color: var(--btecBlue);
 }
-.Navegacao .Menu-Mobile .menu-Icon .logo {
+.Navegacao .Menu-Mobile .menu-Icon .logo a {
   display: flex;
   align-items: center;
 }
 .Navegacao .Menu-Mobile .menu-Icon .logo img {
   width: 6rem;
   justify-content: center;
-  margin-top: 0.5rem;
   margin-left: 2rem;
+  padding: 0.38rem 0;
 }
 
 .Navegacao .Menu-Mobile .menu-Icon .mIcon {
@@ -181,6 +184,10 @@
   margin-top: 1.5rem;
 }
 
+.Navegacao .Menu-Mobile .area_menu #Menu-Open ul li a {
+  color: var(--white);
+}
+
 @media (max-width: 1667px) {
   .Navegacao nav .SigBTec,
   .Navegacao nav .buttonLink {
@@ -188,6 +195,9 @@
   }
   .Navegacao .Menu-Desktop .Desktop-Nav ul li a {
     margin-right: 1rem;
+  }
+  .Navegacao .Menu-Desktop {
+    height: 4.3rem;
   }
 }
 
@@ -197,9 +207,6 @@
   }
   .Navegacao .Menu-Desktop {
     display: flex;
-  }
-  .Navegacao {
-    height: 4.7rem;
   }
 }
 
