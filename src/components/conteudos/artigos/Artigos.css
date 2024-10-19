@@ -21,7 +21,7 @@
     align-items: center;
     padding: 1rem;
     width: 20rem;
-    height: auto;
+    height: 18rem;
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
@@ -61,3 +61,8 @@
       gap: 5rem;
     }
   }
+
+.sectionArtigos .artigos .artigoa {
+    text-decoration: none;
+    color: var(--btecDarkBlue);
+}
