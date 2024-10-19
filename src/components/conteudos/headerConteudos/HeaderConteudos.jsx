@@ -8,7 +8,7 @@ function HeaderConteudos() {
             <div className="titulo">
                 <h1>Conteúdos e Eventos</h1>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                A BTec produz de forma constante conteúdos gratuitos e disponíveis a todos. Além disso, a BTec possui uma agenda de eventos que você também pode aproveitar. Acesse e fique por dentro dos assuntos e novidades.
             </p>
             </div>
             
