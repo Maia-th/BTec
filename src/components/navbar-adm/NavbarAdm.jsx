@@ -16,19 +16,19 @@ function navbarAdm() {
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link to="/">BTec</Link>
+              <Link className="navLink" to="/">BTec</Link>
             </li>
             <li>
-              <Link to="/">Startups</Link>
+              <Link className="navLink" to="/">Startups</Link>
             </li>
             <li>
-              <Link to="/">Monitoramentos</Link>
+              <Link className="navLink" to="/">Monitoramentos</Link>
             </li>
             <li>
-              <Link to="/">Usuários</Link>
+              <Link className="navLink" to="/">Usuários</Link>
             </li>
             <li>
-              <Link to="/">Relatórios</Link>
+              <Link className="navLink" to="/">Relatórios</Link>
             </li>
             <li>
               <button

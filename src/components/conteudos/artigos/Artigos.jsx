@@ -6,7 +6,7 @@ import capa2 from "./capaArtigoDesafios.png";
 export default function Artigos() {
   return (
     <section className="sectionArtigos">
-      <h2>Artigos da Btec </h2>
+      <h2>Artigos da BTec </h2>
       <div className="artigos">
         <a
           className="artigoa"

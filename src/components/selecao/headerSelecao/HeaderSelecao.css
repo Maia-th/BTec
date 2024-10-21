@@ -1,7 +1,7 @@
 .headerSelecao {
     display: flex;
     max-height: 40dvh;
-    padding: 5rem 10rem;
+    padding: 2.5rem 10rem 3rem;
     background-color: var(--btecBlue);
     color: var(--white);
 }

@@ -8,7 +8,7 @@ export default function HeaderStartup() {
       <div className="TextoStartup">
         <h1>Startups Graduadas e Incubadas Pelo PIBTEC</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cumque quidem natus culpa consectetur, perferendis suscipit soluta maiores odio impedit? Aperiam deleniti placeat repellat molestias blanditiis laudantium obcaecati aliquid laborum.
+        A BTec possui empresas graduadas e empresas incubadas. Venha conhecer essas empresas, bem como suas histórias de sucesso e crescimento. Aumente sua rede de contatos!
         </p>
         <button>Participe do PIBTec</button>
       </div>
