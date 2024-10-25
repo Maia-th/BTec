@@ -18,11 +18,11 @@ function Missao() {
             <div className='divMissao' >
                 <h7 className='num' >03</h7>
                 <h3>Nossos valores</h3>
-                <p>Agilidade: Conectar a comunidade acadêmica ao ramo tecnológico. 
-Impacto: Fomentar o desenvolvimento de novos negócios tecnológicos. 
-Inovação: Incentivar a criação de novas tecnologias. 
-Tecnologia: Propor a solução de problemas usando tecnologia. 
-Mão na massa: Auxiliar o desenvolvimento de soluções.</p>
+                <p><strong>Agilidade:</strong> Conectar a comunidade acadêmica ao ramo tecnológico.<br/>
+                <strong>Impacto:</strong> Fomentar o desenvolvimento de novos negócios tecnológicos.<br/>
+                <strong>Inovação:</strong> Incentivar a criação de novas tecnologias.<br/>
+                <strong>Tecnologia:</strong> Propor a solução de problemas usando tecnologia.<br/>
+                <strong>Mão na massa:</strong> Auxiliar o desenvolvimento de soluções.</p>
             </div>
         </div>
     );

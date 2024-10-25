@@ -22,3 +22,20 @@
     padding: 0 1.5rem;
     width: 10rem;
 }
+
+@media(max-width: 1342px){
+    .sectionParceiros{
+      padding: 2rem 3rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .sectionParceiros{
+      padding: 1rem 2rem;
+    }
+    .sectionParceiros .imagens img {
+        padding: 0 1rem;
+        width: 30%;
+        max-width: 10rem;
+        min-width: 6rem;
+    }
+  }
