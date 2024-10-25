@@ -1,8 +1,8 @@
 import React from "react";
 import "./Parceiros.css"
-import prefeitura from "../../../assets/images/logoPrefeitura.svg";
-import unifei from "../../../assets/images/logoUnifei.svg";
-import fupai from "../../../assets/images/logoFupai.svg";
+import prefeitura from "../../../assets/images/logoPrefeitura.webp";
+import unifei from "../../../assets/images/logoUnifei.webp";
+import fupai from "../../../assets/images/logoFupai.webp";
 
 function parceiros() {
     return (

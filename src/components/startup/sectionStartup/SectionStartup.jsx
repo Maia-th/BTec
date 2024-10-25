@@ -1,9 +1,9 @@
 import React from "react";
 import "./SectionStartup.css";
-import LogoTangram from "../../../assets/images/TangramMove.svg";
-import JESTTOR from "../../../assets/images/JESTTOR.svg";
-import Convici from "../../../assets/images/Convici.svg";
-import HHO from "../../../assets/images/HHO.svg";
+import LogoTangram from "../../../assets/images/TangramMove.webp";
+import JESTTOR from "../../../assets/images/JESTTOR.webp";
+import Convici from "../../../assets/images/Convici.webp";
+import HHO from "../../../assets/images/HHO.webp";
 
 export default function SectionStartup() {
   return (

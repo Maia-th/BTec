@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeaderStartup.css";
-import PIBTecLogo from "../../../assets/images/logoPIBTec.png";
+import PIBTecLogo from "../../../assets/images/logoPIBTec.webp";
 
 export default function HeaderStartup() {
   return (

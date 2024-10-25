@@ -1,7 +1,6 @@
 import React from "react";
 import "./Artigos.css";
-import capa from "./capaArtigos.png";
-import capa2 from "./capaArtigoDesafios.png";
+import capa from "../../../assets/images/capaArtigos.webp";
 
 export default function Artigos() {
   return (
@@ -38,7 +37,7 @@ export default function Artigos() {
           href="https://www.linkedin.com/pulse/desafios-enfrentados-pelas-startups-durante-o-per%25C3%25ADodo-btec/?trackingId=XoRyXdTKSPefg902WrGq1A%3D%3D"
         >
           <div className="artigoDiv">
-            <img className="ImagemArtigo" src={capa2} alt="capa do Artigo" />
+            <img className="ImagemArtigo" src={capa} alt="capa do Artigo" />
             <div className="divTitulo">
               <p className="tituloArtigo">
                 Desafios enfrentados pelas startups durante o período de

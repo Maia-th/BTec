@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeaderConteudos.css";
-import logo from "../../../assets/images/logoBranco.svg";
+import logo from "../../../assets/images/logoBranco.webp";
 
 function HeaderConteudos() {
   return (
