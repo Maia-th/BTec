@@ -64,7 +64,7 @@
 
 @media (max-width: 1749px) {
     .sectionArtigos .artigos {
-        gap: 2rem 2rem;
+        gap: 2rem;
     }
 
     .sectionArtigos .artigos .artigoDiv {
