@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../assets/images/logoBranco.svg";
+import logo from "../../assets/images/logoBranco.webp";
 import menuShow from "../../utils/menu-show/menuShow";
 
 function navbarInst() {

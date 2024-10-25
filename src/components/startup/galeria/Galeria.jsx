@@ -1,19 +1,19 @@
 import React from "react";
 import "./Galeria.css";
-import Foto01 from "../../../assets/images/Fotos/foto01.svg";
-import Foto02 from "../../../assets/images/Fotos/foto02.svg";
-import Foto03 from "../../../assets/images/Fotos/foto03.svg";
-import Foto04 from "../../../assets/images/Fotos/foto04.svg";
-import Foto05 from "../../../assets/images/Fotos/foto05.svg";
-import Foto06 from "../../../assets/images/Fotos/foto06.svg";
-import Foto07 from "../../../assets/images/Fotos/foto07.svg";
-import Foto08 from "../../../assets/images/Fotos/foto08.svg";
-import Foto09 from "../../../assets/images/Fotos/foto09.svg";
-import Foto10 from "../../../assets/images/Fotos/foto10.svg";
-import Foto11 from "../../../assets/images/Fotos/foto11.svg";
-import Foto12 from "../../../assets/images/Fotos/foto12.svg";
-import Foto13 from "../../../assets/images/Fotos/foto13.svg";
-import Foto14 from "../../../assets/images/Fotos/foto14.svg";
+import Foto01 from "../../../assets/images/Fotos/foto01.webp";
+import Foto02 from "../../../assets/images/Fotos/foto02.webp";
+import Foto03 from "../../../assets/images/Fotos/foto03.webp";
+import Foto04 from "../../../assets/images/Fotos/foto04.webp";
+import Foto05 from "../../../assets/images/Fotos/foto05.webp";
+import Foto06 from "../../../assets/images/Fotos/foto06.webp";
+import Foto07 from "../../../assets/images/Fotos/foto07.webp";
+import Foto08 from "../../../assets/images/Fotos/foto08.webp";
+import Foto09 from "../../../assets/images/Fotos/foto09.webp";
+import Foto10 from "../../../assets/images/Fotos/foto10.webp";
+import Foto11 from "../../../assets/images/Fotos/foto11.webp";
+import Foto12 from "../../../assets/images/Fotos/foto12.webp";
+import Foto13 from "../../../assets/images/Fotos/foto13.webp";
+import Foto14 from "../../../assets/images/Fotos/foto14.webp";
 
 export default function Galeria() {
     return(

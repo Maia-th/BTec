@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/images/logoBranca.png";
+import logo from "../../assets/images/logoBranca.webp";
 import {
   YoutubeLogo,
   InstagramLogo,

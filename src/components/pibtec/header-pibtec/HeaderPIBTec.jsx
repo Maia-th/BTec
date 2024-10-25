@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeaderPIBTec.css";
-import etapas from "../../../assets/images/etapas.png";
+import etapas from "../../../assets/images/etapas.webp";
 
 export default function HeaderPIBTec() {
   return (
