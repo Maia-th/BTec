@@ -20,6 +20,7 @@ export default function Galeria() {
         <section className="sectionGaleria">
             <h2>Galeria de Fotos</h2>
             <article className="fotos">
+                <img src={Foto05} alt="Foto 05" />
                 <img src={Foto12} alt="Foto 12" />
                 <img src={Foto13} alt="Foto 13" />
                 <img src={Foto14} alt="Foto 14" />
@@ -27,7 +28,6 @@ export default function Galeria() {
                 <img src={Foto02} alt="Foto 02" />
                 <img src={Foto03} alt="Foto 03" />
                 <img src={Foto04} alt="Foto 04" />
-                <img src={Foto05} alt="Foto 05" />
                 <img src={Foto06} alt="Foto 06" />
                 <img src={Foto07} alt="Foto 07" />
                 <img src={Foto08} alt="Foto 08" />
