@@ -19,8 +19,13 @@
     width: 45rem;
 }
 
-@media (max-width: 1667px) {
-    .headerBtec{
-        padding: 5 10rem;
+@media(max-width: 1342px){
+    .headerSelecao{
+      padding: 2rem 3rem;
     }
-}
+  }
+  @media (max-width: 767px) {
+    .headerSelecao{
+      padding: 2rem 2rem;
+    }
+  }

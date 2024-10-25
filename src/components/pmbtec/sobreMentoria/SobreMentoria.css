@@ -18,3 +18,15 @@
 .divSobreMentoria .etapasMentoria{
     width: 60%;
 }
+
+@media(max-width: 1342px){
+    .divSobreMentoria {
+      padding: 2rem 3rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .divSobreMentoria {
+      padding: 2rem 2rem;
+    }
+  }
+  
