@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeaderPMBTec.css";
-import etapas from "../../../assets/images/logoPMBTec.png";
+import etapas from "../../../assets/images/logoPMBTec.webp";
 
 export default function HeaderPMBTec() {
   return (

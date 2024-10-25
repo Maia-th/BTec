@@ -34,6 +34,9 @@
 }
 
 .sectionStartup .cardsStartups .card img {
+    width: 12.0625rem;
+    height: 11.75rem;
+    object-fit: cover;
     background-color: white;
     border-radius: 2rem;
     margin-bottom: 0.5rem;
