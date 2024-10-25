@@ -4,7 +4,9 @@
   padding: 2.5rem 10rem;
   align-items: center;
 }
-
+.programasSection h2 {
+  text-align: center;
+}
 .programasSection .PIBTec,
 .programasSection .PMBTec {
   display: flex;
@@ -55,13 +57,31 @@
 }
 
 @media (max-width: 1625px) {
-.programasSection .PIBTec .info,
-.programasSection .PMBTec .info {
-  max-width: 50%;
+  .programasSection .PIBTec .info,
+  .programasSection .PMBTec .info {
+    max-width: 50%;
+  }
+  .programasSection .PIBTec img,
+  .programasSection .PMBTec img {
+    height: 24rem;
+    object-fit: cover;
+  }
 }
-.programasSection .PIBTec img,
-.programasSection .PMBTec img {
-  height: 24rem;
-  object-fit: cover;
+@media(max-width: 1342px){
+  .programasSection{
+    padding: 2rem 3rem;
+  }
 }
+@media (max-width: 767px) {
+  .programasSection {
+    padding: 2 2rem;
+  }
+  .programasSection .PIBTec img,
+  .programasSection .PMBTec img {
+    display: none;
+  }
+  .programasSection .PIBTec .info,
+  .programasSection .PMBTec .info {
+    max-width: 100%;
+  }
 }

@@ -53,12 +53,23 @@
     }
     
 }
-
-@media  (max-width: 1120px){
-    .divEndereco{
-        visibility: hidden;
+@media (max-width: 1343px) {
+    .footer{
+        padding: 0 5rem;
     }
-    .divContatos{
+}
+@media  (max-width: 1012px){
+    .logoContato{
+        justify-content: center;
+    }
+    
+    .divEndereco div{
+        display: none;
+    }
+    .divEndereco{
+        display: none;
+    }
+    .divContatos{   
         margin-left: 0;
         margin-right: 0;
     }

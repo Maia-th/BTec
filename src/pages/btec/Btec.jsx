@@ -20,7 +20,7 @@ export default function Btec() {
       <Numeros />
       <Missao />
       <Parceiros />
-      <Footer />
+      {/* <Footer /> */}
     </React.StrictMode>
   );
 }

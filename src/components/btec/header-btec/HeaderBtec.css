@@ -32,5 +32,29 @@
   }
   .headerBtec .titulo {
     max-width: 57%;
+ 
   }
 }
+
+@media (max-width: 1342px) {
+.headerBtec{
+    padding: 2.5rem 5rem 3rem;
+}
+.headerBtec img {
+    margin-left: 0rem;
+}
+}
+
+@media (max-width: 767px) {
+  .headerBtec {
+    padding: 0 2rem 0rem;
+  }
+  .headerBtec img {
+      display: none;
+      
+  }
+  .headerBtec .titulo {
+    max-width: 100%;
+    width: 100%;
+  }
+  }
