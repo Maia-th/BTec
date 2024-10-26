@@ -44,17 +44,22 @@
     margin-left: 0rem;
 }
 }
-
-@media (max-width: 767px) {
-  .headerBtec {
-    padding: 0 2rem 0rem;
-  }
+@media (max-width: 1071px) {
   .headerBtec img {
-      display: none;
-      
-  }
-  .headerBtec .titulo {
+        display: none;
+        
+    }
+    .headerBtec .titulo {
     max-width: 100%;
     width: 100%;
   }
+  .headerBtec {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  
+  
+  
   }

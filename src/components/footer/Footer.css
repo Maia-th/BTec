@@ -53,14 +53,21 @@
     }
     
 }
-@media (max-width: 1343px) {
+@media (max-width: 1342px) {
     .footer{
-        padding: 0 5rem;
+        padding: 0rem 3rem;
     }
 }
 @media  (max-width: 1012px){
+    .footer{
+        height: 10rem;
+        align-items: center;
+    }
     .logoContato{
+        width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 10%;
     }
     
     .divEndereco div{
@@ -72,5 +79,13 @@
     .divContatos{   
         margin-left: 0;
         margin-right: 0;
+        margin-bottom:0rem;
     }
 }
+
+  @media (max-width: 767px) {
+    .footer {
+      padding: 2rem 2rem;
+    }
+  }
+  

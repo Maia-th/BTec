@@ -75,3 +75,13 @@ li {
         font-weight: 400;
     }
 }
+
+@media(max-width: 1342px){
+    
+  }
+  @media (max-width: 767px) {
+    h1{
+            font-size: 2rem;
+        }
+  }
+  
