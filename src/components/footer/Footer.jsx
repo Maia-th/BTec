@@ -18,12 +18,12 @@ function Footer() {
         <div className="divContatos">
           <h1 className="contatos">Contatos</h1>
           <div className="icons">
-            <YoutubeLogo size={28} />
-            <InstagramLogo size={28} />
-            <TelegramLogo size={28} />
-            <LinkedinLogo size={28} />
-            <SpotifyLogo size={28} />
-            <EnvelopeSimple size={28} />
+            <a href="https://www.youtube.com/@incubadorabtec"><YoutubeLogo size={28} /></a>
+            <a href="https://www.instagram.com/btec_unifei_itabira/"><InstagramLogo size={28} /></a>
+            <a href="https://t.me/btec_itabira_unifei"><TelegramLogo size={28} /></a>
+            <a href="https://www.linkedin.com/in/btecunifeiitabira/"><LinkedinLogo size={28} /></a>
+            <a href="https://open.spotify.com/show/6Iho5tmsuRTSgtrsxklpWo?si=wVhaCHDJT6G71V492-2mJQ&nd=1"><SpotifyLogo size={28} /></a>
+            <a href=""><EnvelopeSimple size={28} /></a>
           </div>
         </div>
       </div>

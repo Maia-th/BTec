@@ -1,17 +1,17 @@
 .footer{
     background-color: var(--btecBlue);
     height: 15.6rem;
-    width: 100%;
     padding: 0 10rem;
     color: white;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    
+    width:100dvw    
 }
 .logoContato{
     display: flex;
     align-items:last baseline;
+    width: 100%;
 }
 
 .logo{
@@ -33,7 +33,7 @@
 
 .divEndereco{
     background-color: var(--btecLaranja);
-    width: 50%;
+    width: 70%;
     height: 10.5rem;
     display: flex;
     justify-content: center;
@@ -46,7 +46,10 @@
 .titulo{
     font-weight: bold;
 }
-
+.icons a{
+    text-decoration: none;
+    color: white;
+}
 @media (max-width: 1388px) {
     .divEndereco{
         width: 100%;
@@ -55,7 +58,7 @@
 }
 @media (max-width: 1342px) {
     .footer{
-        padding: 0rem 3rem;
+        padding: 0 5rem;
     }
 }
 @media  (max-width: 1012px){
@@ -83,9 +86,15 @@
     }
 }
 
-  @media (max-width: 767px) {
-    .footer {
-      padding: 2rem 2rem;
+  @media (max-width: 526px) {
+    .footer{
+        padding: 0 1rem;
+    }
+    .logo{
+        width: 40%;
+    }
+    .divContatos{
+        width: 40%;
     }
   }
   
