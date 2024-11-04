@@ -1,38 +1,57 @@
 .sectionGaleria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    padding: 3rem 10rem;
-    background-color: var(--btecGray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 3rem 10rem;
+  background-color: var(--btecGray);
 }
 
 .sectionGaleria h2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .sectionGaleria .slick-slider {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 80rem;
-    margin-bottom: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 80rem;
+  margin-bottom: 2rem;
 }
 
 .sectionGaleria img {
-    width: 100%;    
-    height: 35rem;
-    object-position: top;
-    object-fit: cover;
-    border-radius: 2rem;
+  width: 100%;
+  height: 35rem;
+  object-position: top;
+  object-fit: cover;
+  border-radius: 2rem;
 }
 
 @media (max-width: 1644px) {
-    .sectionGaleria .slick-slider {
-        max-width: 60rem;
-    }
-    
-    .sectionGaleria img {  
-        height: 25rem;
+  .sectionGaleria .slick-slider {
+    max-width: 60rem;
+  }
+
+  .sectionGaleria img {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 1342px) {
+  .sectionGaleria {
+    padding: 2rem 3rem 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sectionGaleria {
+    padding: 2rem 2rem 3rem;
+  }
+}
+
+@media (max-width: 530px) {
+
+    .sectionGaleria div.slick-slider.slick-initialized ul.slick-dots li {
+        display: none;
     }
 }
