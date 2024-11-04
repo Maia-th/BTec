@@ -26,3 +26,19 @@
 .num {
     color: white;
 }
+
+@media(max-width: 1342px){
+    .divContainer{
+      padding: 2rem 3rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .divContainer{
+      padding: 2rem 2rem;
+    }
+    .divContainer .divMissao{
+        align-items: center;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+  }

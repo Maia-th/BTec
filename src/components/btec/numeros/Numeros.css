@@ -60,3 +60,14 @@
   }
 }
 
+@media(max-width: 1342px){
+  .numerosSection{
+    padding: 2rem 3rem;
+  }
+}
+@media (max-width: 767px) {
+  .numerosSection{
+    padding: 2rem 2rem;
+  }
+}
+

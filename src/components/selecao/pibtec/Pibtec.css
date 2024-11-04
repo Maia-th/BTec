@@ -62,3 +62,20 @@
 .imagemPibtec{
     width: 100%;
 }
+
+@media(max-width: 1342px){
+    .pmbtecDiv .div1{
+      padding: 2rem 3rem;
+    }
+    .pmbtecDiv .div2{
+        padding: 2rem 3rem;
+      }
+  }
+  @media (max-width: 767px) {
+    .pibtecDiv .div1{
+      padding: 2rem 2rem;
+    }
+    .pibtecDiv .div2{
+        padding: 2rem 2rem;
+      }
+  }

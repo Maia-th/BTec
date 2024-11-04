@@ -12,6 +12,9 @@
     align-items: center;
     padding: 3.5rem 10rem 2.5rem;
 }
+.pmbtecDiv h2{
+    text-align: center;
+}
 
 .pmbtecDiv .div1 p{
     margin-top: 1rem;
@@ -63,3 +66,20 @@
 .imagemPmbtec{
     width: 90%;
 }
+
+@media(max-width: 1342px){
+    .pmbtecDiv .div1{
+      padding: 2rem 3rem;
+    }
+    .pmbtecDiv .div2{
+        padding: 2rem 3rem;
+      }
+  }
+  @media (max-width: 767px) {
+    .pmbtecDiv .div1{
+      padding: 2rem 2rem;
+    }
+    .pmbtecDiv .div2{
+        padding: 2rem 2rem;
+      }
+  }

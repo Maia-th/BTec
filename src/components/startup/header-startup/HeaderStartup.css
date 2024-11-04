@@ -17,14 +17,14 @@
 }
 
 .HeaderStartup .TextoStartup button {
-    background-color: var(--btecLaranja);
-    width: 12rem;
-    color: var(--white);
-    padding: 0.5rem;
-    border: none;
-    border-radius: 10px;
-    font-weight: 450;
-    cursor: pointer;
+  background-color: var(--btecLaranja);
+  width: 12rem;
+  color: var(--white);
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 450;
+  cursor: pointer;
 }
 
 .HeaderStartup img {
@@ -37,5 +37,27 @@
   .HeaderStartup img {
     max-width: 46%;
     margin-left: 2rem;
+  }
+}
+
+@media (max-width: 1051px) {
+  .HeaderStartup img {
+    display: none;
+  }
+  .HeaderStartup .TextoStartup {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1342px) {
+  .HeaderStartup {
+    padding: 2rem 3rem 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .HeaderStartup {
+    padding: 2rem 2rem 3rem;
   }
 }

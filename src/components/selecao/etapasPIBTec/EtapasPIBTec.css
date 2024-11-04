@@ -51,6 +51,7 @@
   
   .etapas.PIBTec .etapaCard .conteudoEtapa p {
     font-size: 1.4rem;
+    margin: 0;
   }
   
   .facaParteComponent .pibtecDiv .div1 {
@@ -69,5 +70,18 @@
     }
     .etapas.PIBTec .etapaCard .numeroEtapa.setaOn {
       margin-left: 3.8418rem;
+    }
+  }
+
+  @media (max-width: 1336px) {
+    .etapas.PIBTec .etapaCard .setaEtapa span {
+      display: none;
+    }
+    .etapas.PIBTec .etapaCard .numeroEtapa.setaOn {
+      margin-left: 0rem;
+    }
+  
+    .etapas.PIBTec  {
+      gap: 1rem 2rem;
     }
   }

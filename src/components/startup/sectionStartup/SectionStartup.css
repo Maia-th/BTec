@@ -1,44 +1,61 @@
 .sectionStartup {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 10rem;
 }
 
 .sectionStartup .cardsStartups {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    gap: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 4rem;
 }
 
 .sectionStartup .cardsStartups .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 16rem;
-    min-height: 18rem;
-    padding: 1.5rem 0.5rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    background-color: var(--btecGray);
-    color: var(--btecDarkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  min-height: 18rem;
+  padding: 1.5rem 0.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  background-color: var(--btecGray);
+  color: var(--btecDarkBlue);
 }
 
 .sectionStartup .cardsStartups .card h3 {
-    font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 .sectionStartup .cardsStartups .card img {
-    width: 12.0625rem;
-    height: 11.75rem;
-    object-fit: cover;
-    background-color: white;
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
+  width: 12.0625rem;
+  height: 11.75rem;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
 }
 
+@media (max-width: 1342px) {
+  .sectionStartup {
+    padding: 2rem 3rem 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .sectionStartup {
+    padding: 2rem 2rem 3rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .sectionStartup .cardsStartups {
+    gap: 2rem;
+  }
+}
