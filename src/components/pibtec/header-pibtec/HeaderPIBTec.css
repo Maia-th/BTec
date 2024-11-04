@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100dvh;
   padding: 2.5rem 10rem 3rem;
   background-color: var(--btecBlue);
   color: var(--white);

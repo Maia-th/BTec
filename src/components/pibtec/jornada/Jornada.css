@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100dvh;
   padding: 2.5rem 10rem;
   gap: 2rem;
 }
