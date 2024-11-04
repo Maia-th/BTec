@@ -12,7 +12,7 @@ export default function PIBTec() {
       <HeaderPMBTec />
       <SobreMentoria/>
       <FacaPartePmbtec/>
-      {/* <Footer /> */}
+      <Footer />
     </React.StrictMode>
   );
 }
