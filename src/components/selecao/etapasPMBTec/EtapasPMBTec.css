@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  width: 100dvh;
   padding: 2rem 0 1rem 0;
 }
 
@@ -71,5 +72,18 @@
   }
   .etapas.PMBTec .etapaCard .numeroEtapa.setaOn {
     margin-left: 3.8418rem;
+  }
+}
+
+@media (max-width: 1092px) {
+  .etapas.PMBTec .etapaCard .setaEtapa span {
+    display: none;
+  }
+  .etapas.PMBTec .etapaCard .numeroEtapa.setaOn {
+    margin-left: 0rem;
+  }
+
+  .etapas.PMBTec  {
+    gap: 1rem 2rem;
   }
 }
