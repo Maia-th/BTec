@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 100dvh;
     padding: 2rem 0 1rem 0;
   }
   

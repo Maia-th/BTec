@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100dvh;
   padding: 2.5rem 10rem 3rem;
   background-color: var(--btecBlue);
   color: var(--white);
@@ -37,4 +37,26 @@
   max-width: 50%;
   margin-left: 1rem;
   border-radius: 1rem;
+}
+
+@media (max-width: 1066px) {
+  .HeaderPIBTec img {
+    display: none;
+  }
+  .HeaderPIBTec .TextoPIBTec {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1342px) {
+  .HeaderPIBTec {
+    padding: 2rem 3rem 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .HeaderPIBTec {
+    padding: 2rem 2rem 3rem;
+  }
 }
