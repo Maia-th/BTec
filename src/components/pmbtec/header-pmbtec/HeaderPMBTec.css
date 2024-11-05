@@ -68,6 +68,6 @@
 }
 @media (max-width: 767px) {
   .headerPMBTec {
-    padding: 2rem;
+    padding: 1.25rem 2rem 2rem;
   }
 }
