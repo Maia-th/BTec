@@ -1,44 +1,65 @@
-.divContainer{
-    display: flex;
-    flex-direction:row;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    background-color: var(--btecGray);
-    padding: 2.5rem 10rem;
+.divContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--btecGray);
+  padding: 2.5rem 10rem;
+  width: 100%;
 }
 
-.divMissao{
-    display: flex;
-    flex-direction:column;
-    width: 30%;
-    min-width: 20rem;
-}
-
-.num{
-    background-image: url("fundoNumero.svg");
-    width: 3.39rem;
-    height: 2.805rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.divMissao {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 20rem;
 }
 
 .num {
-    color: white;
+  background-image: url("fundoNumero.svg");
+  width: 3.39rem;
+  height: 2.805rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media(max-width: 1342px){
-    .divContainer{
-      padding: 2rem 3rem;
-    }
+.num {
+  color: white;
+}
+
+@media (max-width: 1342px) {
+  .divContainer {
+    padding: 2rem 3rem;
   }
-  @media (max-width: 767px) {
-    .divContainer{
-      padding: 2rem 2rem;
-    }
-    .divContainer .divMissao{
-        align-items: center;
-        font-size: 1.2rem;
-        width: 100%;
-    }
+}
+
+@media (max-width: 1108px) {
+  .divContainer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
   }
+  .divContainer .divMissao {
+    align-items: center;
+    text-align: justify;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .divContainer {
+    padding: 2rem 2rem;
+  }
+  .divContainer .divMissao {
+    width: 80%;
+  }
+}
+
+@media (max-width: 386px) {
+  .divContainer .divMissao {
+    min-width: 90%;
+  }
+}

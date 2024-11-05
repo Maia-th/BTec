@@ -12,22 +12,23 @@
 }
 
 .numerosSection .metricas {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 3rem;
   width: 100%;
   justify-content: center;
-  align-items: top;
-  gap: 3rem;
+  align-items: start;
 }
 
 .numerosSection .metricas .metricaCard {
   display: flex;
-  max-width: 15rem;
+  width: 100%;
   justify-content: center;
   text-align: center;
 }
 
 .numerosSection .metricas .metricaCard p {
+  max-width: 15rem;
   font-size: 2rem;
 }
 
@@ -43,7 +44,7 @@
     font-size: 1.7rem;
     max-width: 13rem;
   }
-  
+
   .numerosSection .metricas .metricaCard span {
     font-size: 2rem;
   }
@@ -52,22 +53,40 @@
 @media (max-width: 1612px) {
   .numerosSection .metricas .metricaCard p {
     font-size: 1.3rem;
-    max-width: 8rem;
+    max-width: 10rem;
   }
-  
+
   .numerosSection .metricas .metricaCard span {
     font-size: 1.7rem;
   }
 }
 
-@media(max-width: 1342px){
-  .numerosSection{
+@media (max-width: 1342px) {
+  .numerosSection {
     padding: 2rem 3rem;
   }
 }
-@media (max-width: 767px) {
-  .numerosSection{
-    padding: 2rem 2rem;
+
+@media (max-width: 1108px) {
+  .numerosSection .metricas {
+    grid-template-columns:repeat(3, 1fr);
   }
 }
 
+@media (max-width: 559px) {
+  .numerosSection .metricas {
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 386px) {
+  .numerosSection .metricas {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .numerosSection {
+    padding: 2rem 2rem;
+  }
+}

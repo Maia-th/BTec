@@ -5,8 +5,7 @@
     color: white;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-    width:100dvw    
+    justify-content: space-between;    
 }
 .logoContato{
     display: flex;
@@ -16,7 +15,6 @@
 
 .logo{
     width: 10rem;
-    
 }
 
 .divContatos{
@@ -93,8 +91,16 @@
     .logo{
         width: 40%;
     }
-    .divContatos{
-        width: 40%;
-    }
-  }
+}
   
+@media (max-width: 367px) {
+    .footer{
+        height: 8rem;
+    }
+    .footer .logo{
+        display: none;
+    }
+    .divContatos{
+        text-align: center;
+    }
+}

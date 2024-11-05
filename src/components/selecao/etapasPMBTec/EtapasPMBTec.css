@@ -44,7 +44,6 @@
   text-align: center;
   min-width: 12rem;
   margin-top: 0.05rem;
-  min-height: 8rem;
   align-items: center;
   padding: 0.8rem;
   background-color: #d9d9d9;
@@ -75,6 +74,12 @@
   }
 }
 
+@media (max-width: 1336px) {
+  .etapas.PMBTec .etapaCard .numeroEtapa {
+    width: 2.5rem;
+  }
+}
+
 @media (max-width: 1092px) {
   .etapas.PMBTec .etapaCard .setaEtapa span {
     display: none;
@@ -82,8 +87,13 @@
   .etapas.PMBTec .etapaCard .numeroEtapa.setaOn {
     margin-left: 0rem;
   }
-
   .etapas.PMBTec  {
     gap: 1rem 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .etapas.PMBTec .etapaCard .numeroEtapa {
+    width: 2rem;
   }
 }
