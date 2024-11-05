@@ -85,3 +85,18 @@
         padding: 2rem 2rem;
       }
   }
+
+  @media (max-width: 355px) {
+    .pmbtecDiv{
+      width: 100%;
+    }
+    .botoesPm {
+        max-width: 100%;
+    }
+    .botoesPm .botaoEdital {
+        padding: 1rem;
+    }
+    .botoesPm .botaoInscricao{
+        padding: 1rem;
+    }
+  }
