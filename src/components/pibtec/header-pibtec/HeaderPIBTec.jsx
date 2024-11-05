@@ -13,7 +13,7 @@ export default function HeaderPIBTec() {
           escaláveis e escaláveis) por meio da jornada do empreendedor com foco
           na geração de resultados inovadores e atendimento das demandas locais.
         </p>
-        <button>Edital De Seleção</button>
+        <button onClick={() => window.open("https://docs.google.com/document/d/1K2BYQGHows723DOFcBcTE-M_WvsPps6f68NmUNHwl14", "_blank")}>Edital De Seleção</button>
       </div>
       <img src={etapas} alt="Etapas de Incubacao" />
     </header>

@@ -91,16 +91,12 @@
 
 @media (max-width: 671px) {
   .sectionArtigos .artigos .artigoDiv {
-    width: 26rem;
+    width: 95%;
+    max-width: 480px;
+    margin: 0 auto;
     height: auto;
   }
   .sectionArtigos .artigos .artigoDiv p {
     padding-top: 0.5rem;
   }
 }
-
-@media (max-width: 481px) {
-    .sectionArtigos .artigos .artigoDiv {
-      width: 16rem;
-    }
-  }

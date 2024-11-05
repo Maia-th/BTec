@@ -50,8 +50,16 @@
 }
 
 @media (max-width: 530px) {
+  .sectionGaleria div.slick-slider.slick-initialized ul.slick-dots li {
+    display: none;
+  }
 
-    .sectionGaleria div.slick-slider.slick-initialized ul.slick-dots li {
-        display: none;
-    }
+  .sectionGaleria .slick-slider {
+    width: 100%;
+    margin-bottom: 0rem;
+  }
+
+  .sectionGaleria img {
+    height: 25rem;
+  }
 }

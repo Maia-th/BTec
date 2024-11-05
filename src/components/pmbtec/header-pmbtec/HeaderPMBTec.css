@@ -51,6 +51,21 @@
     padding: 2rem 3rem;
   }
 }
+@media (max-width: 863px) {
+  .headerPMBTec {
+    align-items: center;
+    justify-content: center;
+  }
+  .headerPMBTec img {
+    display: none;
+  }
+
+  .headerPMBTec .textoPMBTec {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+}
 @media (max-width: 767px) {
   .headerPMBTec {
     padding: 2rem 2rem;
