@@ -4,7 +4,7 @@
   padding: 2.5rem 10rem;
   align-items: center;
 }
-.programasSection h2 {
+.programasSection h2,.programasSection h3 {
   text-align: center;
 }
 .programasSection .PIBTec,

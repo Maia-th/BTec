@@ -6,6 +6,11 @@
     color: var(--btecDarkBlue);
     
 }
+
+.pmbtecDiv h2 {
+    text-align: center;
+}
+
 .pmbtecDiv .div1{
     display: flex;
     flex-direction: column;
@@ -94,9 +99,9 @@
         max-width: 100%;
     }
     .botoesPm .botaoEdital {
-        padding: 1rem;
+        padding: 0.5rem 1rem;
     }
     .botoesPm .botaoInscricao{
-        padding: 1rem;
+        padding: 0.5rem 1rem;
     }
   }

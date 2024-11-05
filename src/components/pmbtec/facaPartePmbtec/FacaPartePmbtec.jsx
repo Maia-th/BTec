@@ -6,7 +6,7 @@ function FacaPartePmbtec() {
   return (
     <div className="pmbtecDiv">
       <div className="div1">
-        <h2>Faça parte do programa de mentoria</h2>
+        <h2>Faça Parte do Programa de Mentoria</h2>
         <EtapasPMBTec />
       </div>
       <div className="div2">

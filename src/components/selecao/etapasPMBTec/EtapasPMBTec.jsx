@@ -11,7 +11,7 @@ function EtapasPMBTec() {
             </div>
             <div className="setaEtapa">
               <div className="conteudoEtapa">
-                <p>Inscrição Online</p>
+                <p>Inscrição <br/> Online</p>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ function EtapasPMBTec() {
             <div className="setaEtapa">
               <span>▶</span>
               <div className="conteudoEtapa">
-                <p>Resultado Final</p>
+                <p>Resultado <br/> Final</p>
               </div>
             </div>
           </div>
