@@ -77,6 +77,20 @@
   }
 }
 
+@media (max-width: 1567px) {
+  .sectionArtigos .artigos .artigoDiv {
+    width: 20rem;
+    height: 16rem;
+  }
+}
+
+@media (min-width: 896px) and (max-width: 1439px) {
+  .sectionArtigos .artigos .artigoDiv {
+    width: 24rem;
+    height: 17rem;
+  }
+}
+
 @media (max-width: 1342px) {
   .sectionArtigos {
     padding: 2rem 3rem;
@@ -89,7 +103,7 @@
   }
 }
 
-@media (max-width: 671px) {
+@media (max-width: 735px) {
   .sectionArtigos .artigos .artigoDiv {
     width: 95%;
     max-width: 480px;
