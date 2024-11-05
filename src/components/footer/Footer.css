@@ -5,8 +5,7 @@
     color: white;
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;
-    width:100dvw    
+    justify-content: space-between;    
 }
 .logoContato{
     display: flex;
@@ -16,7 +15,6 @@
 
 .logo{
     width: 10rem;
-    
 }
 
 .divContatos{
