@@ -5,6 +5,10 @@
   padding: 2rem 10rem;
 }
 
+.sectionFacaParte h2 {
+  text-align: center;
+}
+
 @media (max-width: 1342px) {
   .sectionFacaParte {
     padding: 2rem 3rem 3rem;

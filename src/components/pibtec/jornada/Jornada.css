@@ -7,6 +7,10 @@
   gap: 2rem;
 }
 
+.sectionJornada h2{
+  text-align: center;
+}
+
 .sectionJornada .cards {
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +87,10 @@
 }
 
 @media (max-width: 735px) {
+  .sectionJornada .cards {
+    width: 100%;
+  }
+
   .sectionJornada .cards .cardEtapa {
     width: 28rem;
     max-width: 90%;
