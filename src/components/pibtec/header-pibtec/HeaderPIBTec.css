@@ -37,7 +37,11 @@
   margin-left: 1rem;
   border-radius: 1rem;
 }
-
+@media (max-width: 1342px) {
+  .HeaderPIBTec {
+    padding: 2rem 3rem 3rem;
+  }
+}
 @media (max-width: 1066px) {
   .HeaderPIBTec img {
     display: none;
@@ -48,11 +52,7 @@
   }
 }
 
-@media (max-width: 1342px) {
-  .HeaderPIBTec {
-    padding: 2rem 3rem 3rem;
-  }
-}
+
 
 @media (max-width: 767px) {
   .HeaderPIBTec {

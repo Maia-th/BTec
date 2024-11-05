@@ -1,5 +1,6 @@
 .divSobreMentoria{
     padding: 4.5rem 10rem 1rem;
+    background-color: var(--BtecGray);
 }
 
 .divSobreMentoria .tituloSobre{
@@ -28,5 +29,8 @@
     .divSobreMentoria {
       padding: 2rem 2rem;
     }
+    .divSobreMentoria .etapasMentoria{
+      width: 100%;
+  }
   }
   

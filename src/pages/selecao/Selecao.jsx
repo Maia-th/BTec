@@ -12,7 +12,7 @@ export default function Selecao() {
       <HeaderSelecao />
       <Pibtec />  
       <Pmbtec />
-      {/* <Footer /> */}
+      <Footer />
     </React.StrictMode>
   );
 }
