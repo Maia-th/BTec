@@ -17,6 +17,7 @@
     align-items: center;
     padding: 3.5rem 10rem 2.5rem;
     background-color: var(--white);
+    width: 100%;
 }
 .pmbtecDiv h2{
     text-align: center;

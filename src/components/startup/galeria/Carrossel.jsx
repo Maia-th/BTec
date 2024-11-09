@@ -31,9 +31,6 @@ const Carrossel = () => {
     return (
       <Slider {...settings}>
         <div>
-          <img src={Foto05} alt="Foto 05" />
-        </div>
-        <div>
           <img src={Foto12} alt="Foto 12" />
         </div>
         <div>
@@ -43,31 +40,34 @@ const Carrossel = () => {
           <img src={Foto14} alt="Foto 14" />
         </div>
         <div>
-          <img src={Foto01} alt="Foto 01" />
-        </div>
-        <div>
-          <img src={Foto02} alt="Foto 02" />
-        </div>
-        <div>
-          <img src={Foto03} alt="Foto 03" />
-        </div>
-        <div>
-          <img src={Foto04} alt="Foto 04" />
+          <img src={Foto07} alt="Foto 07" />
         </div>
         <div>
           <img src={Foto06} alt="Foto 06" />
         </div>
         <div>
-          <img src={Foto07} alt="Foto 07" />
+          <img src={Foto08} alt="Foto 08" />
         </div>
         <div>
-          <img src={Foto08} alt="Foto 08" />
+          <img src={Foto04} alt="Foto 04" />
+        </div>
+        <div>
+          <img src={Foto05} alt="Foto 05" />
+        </div>
+        <div>
+          <img src={Foto03} alt="Foto 03" />
         </div>
         <div>
           <img src={Foto09} alt="Foto 09" />
         </div>
         <div>
           <img src={Foto10} alt="Foto 10" />
+        </div>
+        <div>
+          <img src={Foto01} alt="Foto 01" />
+        </div>
+        <div>
+          <img src={Foto02} alt="Foto 02" />
         </div>
         <div>
           <img src={Foto11} alt="Foto 11" />
