@@ -3,9 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
     color: var(--btecDarkBlue);
 }
+
+.pibtecDiv h2 {
+  text-align: center;
+}
+
 .pibtecDiv .div1{
     display: flex;
     flex-direction: column;
@@ -78,4 +82,19 @@
     .pibtecDiv .div2{
         padding: 2rem 2rem;
       }
+  }
+
+  @media (max-width: 355px) {
+    .pibtecDiv{
+      width: 100%;
+    }
+    .botoesPib {
+        max-width: 100%;
+    }
+    .botoesPib .botaoEdital {
+        padding: 0.5rem 1rem;
+    }
+    .botoesPib .botaoInscricao{
+        padding: 0.5rem 1rem;
+    }
   }

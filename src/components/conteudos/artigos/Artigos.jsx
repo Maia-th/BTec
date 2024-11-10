@@ -62,7 +62,7 @@ export default function Artigos() {
         className="botaoVerArtigos"
         href="https://www.linkedin.com/in/btecunifeiitabira/recent-activity/articles/"
       >
-        Acessar mais artigos
+        Acessar Mais Artigos
       </a>
     </section>
   );
