@@ -14,10 +14,10 @@ function Pibtec() {
                 <p>Para participar do Processo de Seleção, é necessário atender aos requisitos do edital de seleção e fazer a inscrição de forma online.
                 São condições básicas para participar do edital que o projeto proponha o desenvolvimento ou geração de produtos, processos ou serviços inovadores, de alto valor agregado e de base tecnológica. Também são analisadas a viabilidade técnica e a capacidade empreendedora. </p>
                 <div className="botoesPib">
-                    <a className="botaoEdital" href="https://docs.google.com/document/d/1K2BYQGHows723DOFcBcTE-M_WvsPps6f68NmUNHwl14/edit" target="_blank">
+                    <a className="botaoEdital" href="https://docs.google.com/document/d/1K2BYQGHows723DOFcBcTE-M_WvsPps6f68NmUNHwl14/edit" target="_blank" rel="noopener noreferrer">
                     Confira o Edital
                     </a>
-                    <a className="botaoInscricao" href="https://forms.gle/3GxNy5zZkuzD3Niv8" target="_blank">
+                    <a className="botaoInscricao" href="https://forms.gle/3GxNy5zZkuzD3Niv8" target="_blank" rel="noopener noreferrer">
                     Faça sua Inscrição
                     </a>
                 </div>
