@@ -52,9 +52,9 @@
   }
 }
 
-@media (min-width: 900px) and (max-width: 1119px) {
+@media (min-width: 896px) and (max-width: 1119px) {
   .sectionVideos .videosYouTube .videoDiv iframe {
-    width: 350px;
+    width: 24rem;
   }
 }
 

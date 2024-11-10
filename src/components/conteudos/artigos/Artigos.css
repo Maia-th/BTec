@@ -84,6 +84,12 @@
   }
 }
 
+@media (min-width: 1120px) and (max-width: 1439px) {
+  .sectionArtigos .artigos {
+    gap: 3rem 4rem;
+  }
+}
+
 @media (min-width: 896px) and (max-width: 1439px) {
   .sectionArtigos .artigos .artigoDiv {
     width: 24rem;
