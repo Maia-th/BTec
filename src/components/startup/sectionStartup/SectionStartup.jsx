@@ -10,7 +10,7 @@ export default function SectionStartup() {
     <section className="sectionStartup">
       <h2>Startups</h2>
       <article className="cardsStartups">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/tangrammove" target="_blank" rel="noopener noreferrer">
           <div className="card">
             <img src={LogoTangram} alt="Logo Startup" />
             <h3>Tangram Move</h3>
@@ -18,7 +18,7 @@ export default function SectionStartup() {
           </div>
         </a>
 
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/jesttoragencia" target="_blank" rel="noopener noreferrer">
           <div className="card">
             <img src={JESTTOR} alt="Logo Startup" />
             <h3>JESTTOR</h3>
@@ -26,7 +26,7 @@ export default function SectionStartup() {
           </div>
         </a>
 
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/convici_" target="_blank" rel="noopener noreferrer">
           <div className="card">
             <img src={Convici} alt="Logo Startup" />
             <h3>Convici</h3>
@@ -34,7 +34,7 @@ export default function SectionStartup() {
           </div>
         </a>
 
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/hhosolucoes" target="_blank" rel="noopener noreferrer">
           <div className="card">
             <img src={HHO} alt="Logo Startup" />
             <h3>HHO</h3>
