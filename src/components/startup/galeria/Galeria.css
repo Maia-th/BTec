@@ -27,6 +27,19 @@
   border-radius: 2rem;
 }
 
+.sectionGaleria
+  div.slick-slider.slick-initialized
+  button.slick-arrow.slick-prev:before,
+.sectionGaleria
+  div.slick-slider.slick-initialized
+  button.slick-arrow.slick-next:before {
+  color: var(--btecLaranja);
+}
+
+.sectionGaleria div.slick-slider.slick-initialized ul.slick-dots li button::before {
+  color: var(--btecLaranja);
+}
+
 @media (max-width: 1644px) {
   .sectionGaleria .slick-slider {
     max-width: 60rem;
