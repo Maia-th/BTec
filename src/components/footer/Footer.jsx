@@ -18,12 +18,48 @@ function Footer() {
         <div className="divContatos">
           <h1 className="contatos">Contatos</h1>
           <div className="icons">
-            <a href="https://www.youtube.com/@incubadorabtec"><YoutubeLogo size={28} /></a>
-            <a href="https://www.instagram.com/btec_unifei_itabira/"><InstagramLogo size={28} /></a>
-            <a href="https://t.me/btec_itabira_unifei"><TelegramLogo size={28} /></a>
-            <a href="https://www.linkedin.com/in/btecunifeiitabira/"><LinkedinLogo size={28} /></a>
-            <a href="https://open.spotify.com/show/6Iho5tmsuRTSgtrsxklpWo?si=wVhaCHDJT6G71V492-2mJQ&nd=1"><SpotifyLogo size={28} /></a>
-            <a href=""><EnvelopeSimple size={28} /></a>
+            <a
+              href="https://www.youtube.com/@incubadorabtec"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <YoutubeLogo size={28} />
+            </a>
+            <a
+              href="https://www.instagram.com/btec_unifei_itabira/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramLogo size={28} />
+            </a>
+            <a
+              href="https://t.me/btec_itabira_unifei"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TelegramLogo size={28} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/btecunifeiitabira/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedinLogo size={28} />
+            </a>
+            <a
+              href="https://open.spotify.com/show/6Iho5tmsuRTSgtrsxklpWo?si=wVhaCHDJT6G71V492-2mJQ&nd=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SpotifyLogo size={28} />
+            </a>
+            <a
+              href="mailto:btec@unifei.edu.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <EnvelopeSimple size={28} />
+            </a>
           </div>
         </div>
       </div>

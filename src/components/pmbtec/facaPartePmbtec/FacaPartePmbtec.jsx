@@ -18,12 +18,14 @@ function FacaPartePmbtec() {
           cujos produtos, processos ou serviços sejam de base tecnológica. 
         </p>
         <div className="botoesPm">
-          <a className="botaoEdital" href="#">
+          <a className="botaoEdital" href="https://docs.google.com/document/d/1zHkqHwNMLbpvq9VJ7ahKQQsRLtsla_gTWV3wKd8WRxE/edit"
+          target="_blank" rel="noopener noreferrer">
             Confira o Edital
           </a>
           <a
             className="botaoInscricao"
             href="https://forms.gle/nY6gxfj4E25oXxYt6"
+            target="_blank" rel="noopener noreferrer"
           >
             Faça sua Inscrição
           </a>
