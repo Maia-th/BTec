@@ -75,13 +75,11 @@
 
 @media (max-width: 559px) {
   .numerosSection .metricas {
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns:1fr;
   }
-}
 
-@media (max-width: 386px) {
-  .numerosSection .metricas {
-    grid-template-columns: 1fr;
+  .numerosSection .metricas .metricaCard p {
+    max-width: 100%;
   }
 }
 
