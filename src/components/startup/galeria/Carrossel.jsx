@@ -43,7 +43,7 @@ const Carrossel = () => {
           <img src={Foto07} alt="Foto 07" />
         </div>
         <div>
-          <img src={Foto06} alt="Foto 06" />
+          <img className='Foto06' src={Foto06} alt="Foto 06" />
         </div>
         <div>
           <img src={Foto08} alt="Foto 08" />

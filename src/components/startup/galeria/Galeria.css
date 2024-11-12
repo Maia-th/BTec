@@ -62,17 +62,36 @@
   }
 }
 
+@media (max-width: 708px) {
+  .sectionGaleria img.Foto06 {
+    object-position: left;
+  }
+}
+
 @media (max-width: 530px) {
   .sectionGaleria div.slick-slider.slick-initialized ul.slick-dots li {
     display: none;
   }
 
-  .sectionGaleria .slick-slider {
+  .sectionGaleria{
     width: 100%;
+  }
+  .sectionGaleria .slick-slider {
+    width: 85%;
     margin-bottom: 0rem;
   }
 
   .sectionGaleria img {
     height: 25rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .sectionGaleria .slick-slider {
+    width: 82%;
+  }
+
+  .sectionGaleria img {
+    height: 20rem;
   }
 }
