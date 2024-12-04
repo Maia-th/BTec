@@ -109,7 +109,6 @@
 
 | Campo                                         | Tipo         | Restrição                  |
 | --------------------------------------------- | ------------ | -------------------------- |
-| ID                                            | INT          | PK, AUTO_INCREMENT         |
 | ID_Startup                                    | INT          | FK -> Startup(ID_Startup)  |
 | ID_Jornada                                    | INT          | FK -> JornadaBase(ID)      |
 | ID_Eixo                                       | INT          | FK -> JornadaEixo(ID_Eixo) |
@@ -183,7 +182,6 @@
 
 | Campo                                    | Tipo     | Restrição                     |
 | ---------------------------------------- | -------- | ----------------------------- |
-| ID                                       | INT      | PK, AUTO_INCREMENT            |
 | ID_Monitoramento                         | INT      | FK -> Monitoramento(ID)       |
 | ID_Socio                                 | CHAR(11) | FK -> Socios(ID_Empreendedor) |
 | PRIMARY KEY (ID_Monitoramento, ID_Socio) |
