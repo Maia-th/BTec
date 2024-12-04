@@ -73,16 +73,17 @@
 
 #### Tabela: **JornadaStartup**
 
-| Campo                   | Tipo         | Restrição                 |
-| ----------------------- | ------------ | ------------------------- |
-| ID                      | INT          | PK, AUTO_INCREMENT        |
-| ID_Startup              | INT          | FK -> Startup(ID_Startup) |
-| ID_Jornada              | INT          | FK -> JornadaBase(ID)     |
-| Data_Inicio             | DATE         | NOT NULL                  |
-| Data_Fim                | DATE         | NULL                      |
-| Historico_Monitoramento | TEXT         | NULL                      |
-| Progresso               | DECIMAL(5,2) | NULL                      |
-| Ultimo_Acesso           | DATETIME     | NULL                      |
+| Campo                   | Tipo         | Restrição                  |
+| ----------------------- | ------------ | -------------------------- |
+| ID                      | INT          | PK, AUTO_INCREMENT         |
+| ID_Startup              | INT          | FK -> Startup(ID_Startup)  |
+| ID_Jornada              | INT          | FK -> JornadaBase(ID)      |
+| ID_Eixo                 | INT          | FK -> JornadaEixo(ID_Eixo) |
+| Data_Inicio             | DATE         | NOT NULL                   |
+| Data_Fim                | DATE         | NULL                       |
+| Historico_Monitoramento | TEXT         | NULL                       |
+| Progresso               | DECIMAL(5,2) | NULL                       |
+| Ultimo_Acesso           | DATETIME     | NULL                       |
 
 ---
 
@@ -127,33 +128,41 @@
 | ID_Analista           | CHAR(11)      | FK -> Admin(CPF)           |
 | Data                  | DATE          | NOT NULL                   |
 | Faturamento           | DECIMAL(10,2) | NULL                       |
-| Item_Nota             | INT           | FK -> JornadaEixo(ID_Eixo) |
 | Num_Funcionario       | INT           | NULL                       |
 | Plano_Desenvolvimento | TEXT          | NULL                       |
-| Socios_Participantes  | TEXT          | NULL                       |
 
 ---
 
-#### Tabela: **Relatorio**
+#### Tabela: **MonitoramentoItens**
 
-| Campo        | Tipo                              | Restrição                 |
-| ------------ | --------------------------------- | ------------------------- |
-| ID           | INT                               | PK, AUTO_INCREMENT        |
-| ID_Startup   | INT                               | FK -> Startup(ID_Startup) |
-| Data_Geracao | DATETIME                          | NOT NULL                  |
-| Tipo         | ENUM('Geral', 'Graduadas', '...') | NOT NULL                  |
-| Conteudo     | TEXT                              | NULL                      |
+| Campo                 | Tipo          | Restrição                  |
+| --------------------- | ------------- | -------------------------- |
+| ID                    | INT           | PK, AUTO_INCREMENT         |
+| ID_Monitoramento      | INT           | FK -> Monitoramento(ID)    |
+| ID_Item               | INT           | FK -> JornadaItem(ID_Item) |
+| Nota                  | INT           | NOT NULL                   |
 
 ---
 
-#### Tabela: **Notificacao**
+#### Tabela: **MonitoramentoSocios**
 
-| Campo           | Tipo     | Restrição          |
-| --------------- | -------- | ------------------ |
-| ID              | INT      | PK, AUTO_INCREMENT |
-| ID_Destinatario | CHAR(11) | FK -> Usuario(CPF) |
-| ID_Remente      | CHAR(11) | FK -> Usuario(CPF) |
-| Data            | DATETIME | NOT NULL           |
-| Mensagem        | TEXT     | NOT NULL           |
+| Campo            | Tipo     | Restrição                     |
+| ---------------- | -------- | ----------------------------- |
+| ID               | INT      | PK, AUTO_INCREMENT            |
+| ID_Monitoramento | INT      | FK -> Monitoramento(ID)       |
+| ID_Socio         | CHAR(11) | FK -> Socios(ID_Empreendedor) |
+
+---
+
+#### Tabela: **Notificacoes**
+
+| Campo        | Tipo     | Restrição                |
+| ------------ | -------- | ------------------------ |
+| ID           | INT      | PK, AUTO_INCREMENT       |
+| Remetente    | CHAR(11) | FK -> Admin(CPF)         |
+| Destinatario | CHAR(11) | FK -> Usuario(CPF), NULL |
+| Mensagem     | TEXT     | NOT NULL                 |
+| Data_Envio   | DATETIME | NOT NULL                 |
+| Lida         | BOOLEAN  | DEFAULT FALSE            |
 
 ---
