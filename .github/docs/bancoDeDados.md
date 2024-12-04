@@ -29,12 +29,11 @@
 
 #### Tabela: **Usuario_Rede_Social**
 
-| Campo                        | Tipo         | Restrição          |
-| ---------------------------- | ------------ | ------------------ |
-| CPF                          | CHAR(11)     | FK -> Usuario(CPF) |
-| Nome_Rede                    | VARCHAR(50)  | NOT NULL           |
-| Link                         | VARCHAR(255) | NOT NULL           |
-| PRIMARY KEY (CPF, Nome_Rede) |
+| Campo     | Tipo         | Restrição              |
+| --------- | ------------ | ---------------------- |
+| CPF       | CHAR(11)     | PK, FK -> Usuario(CPF) |
+| Nome_Rede | VARCHAR(50)  | PK                     |
+| Link      | VARCHAR(255) | NOT NULL               |
 
 ---
 
@@ -57,67 +56,63 @@
 
 #### Tabela: **Startup**
 
-| Campo                                     | Tipo          | Restrição                    |
-| ----------------------------------------- | ------------- | ---------------------------- |
-| ID_Startup                                | INT           | PK, AUTO_INCREMENT           |
-| Nome                                      | VARCHAR(100)  | NOT NULL                     |
-| Logo                                      | BLOB          | NOT NULL                     |
-| ID_Empreendedor                           | CHAR(11)      | FK -> Usuario(CPF), NOT NULL |
-| ID_Analista                               | CHAR(11)      | FK -> Admin(CPF), NOT NULL   |
-| CNPJ                                      | CHAR(14)      | UNIQUE, NULL                 |
-| Data_Abertura                             | DATE          | NULL                         |
-| Data_Ingresso                             | DATE          | NULL                         |
-| Descricao                                 | TEXT          | NULL                         |
-| Email                                     | VARCHAR(100)  | NULL                         |
-| Logradouro                                | VARCHAR(255)  | NULL                         |
-| Numero                                    | VARCHAR(10)   | NULL                         |
-| Complemento                               | VARCHAR(255)  | NULL                         |
-| Bairro                                    | VARCHAR(100)  | NULL                         |
-| CEP                                       | VARCHAR(20)   | NULL                         |
-| Cidade                                    | VARCHAR(100)  | NULL                         |
-| Estado                                    | VARCHAR(50)   | NULL                         |
-| Investimento_Inicial                      | DECIMAL(10,2) | NULL                         |
-| Objetivo_PIBTec                           | TEXT          | NULL                         |
-| Ramo_Atuacao                              | VARCHAR(100)  | NULL                         |
-| Telefone                                  | VARCHAR(20)   | NULL                         |
-| PRIMARY KEY (ID_Startup, ID_Empreendedor) |
+| Campo                | Tipo          | Restrição                  |
+| -------------------- | ------------- | -------------------------- |
+| ID_Startup           | INT           | PK, AUTO_INCREMENT         |
+| Nome                 | VARCHAR(100)  | NOT NULL                   |
+| Logo                 | BLOB          | NOT NULL                   |
+| ID_Empreendedor      | CHAR(11)      | PK, FK -> Usuario(CPF)     |
+| ID_Analista          | CHAR(11)      | FK -> Admin(CPF), NOT NULL |
+| CNPJ                 | CHAR(14)      | UNIQUE, NULL               |
+| Data_Abertura        | DATE          | NULL                       |
+| Data_Ingresso        | DATE          | NULL                       |
+| Descricao            | TEXT          | NULL                       |
+| Email                | VARCHAR(100)  | NULL                       |
+| Logradouro           | VARCHAR(255)  | NULL                       |
+| Numero               | VARCHAR(10)   | NULL                       |
+| Complemento          | VARCHAR(255)  | NULL                       |
+| Bairro               | VARCHAR(100)  | NULL                       |
+| CEP                  | VARCHAR(20)   | NULL                       |
+| Cidade               | VARCHAR(100)  | NULL                       |
+| Estado               | VARCHAR(50)   | NULL                       |
+| Investimento_Inicial | DECIMAL(10,2) | NULL                       |
+| Objetivo_PIBTec      | TEXT          | NULL                       |
+| Ramo_Atuacao         | VARCHAR(100)  | NULL                       |
+| Telefone             | VARCHAR(20)   | NULL                       |
 
 ---
 
 #### Tabela: **Startup_Rede_Social**
 
-| Campo                               | Tipo         | Restrição                 |
-| ----------------------------------- | ------------ | ------------------------- |
-| ID_Startup                          | INT          | FK -> Startup(ID_Startup) |
-| Nome_Rede                           | VARCHAR(50)  | NOT NULL                  |
-| Link                                | VARCHAR(255) | NOT NULL                  |
-| PRIMARY KEY (ID_Startup, Nome_Rede) |
+| Campo      | Tipo         | Restrição                     |
+| ---------- | ------------ | ----------------------------- |
+| ID_Startup | INT          | PK, FK -> Startup(ID_Startup) |
+| Nome_Rede  | VARCHAR(50)  | PK                            |
+| Link       | VARCHAR(255) | NOT NULL                      |
 
 ---
 
 #### Tabela: **Socios**
 
-| Campo                                     | Tipo     | Restrição                          |
-| ----------------------------------------- | -------- | ---------------------------------- |
-| ID_Startup                                | INT      | FK -> Startup(ID_Startup), NOT NUL |
-| ID_Empreendedor                           | CHAR(11) | FK -> Usuario(CPF), NOT NULL       |
-| PRIMARY KEY (ID_Startup, ID_Empreendedor) |
+| Campo           | Tipo     | Restrição                     |
+| --------------- | -------- | ----------------------------- |
+| ID_Startup      | INT      | PK, FK -> Startup(ID_Startup) |
+| ID_Empreendedor | CHAR(11) | PK, FK -> Usuario(CPF)        |
 
 ---
 
 #### Tabela: **JornadaStartup**
 
-| Campo                                         | Tipo         | Restrição                  |
-| --------------------------------------------- | ------------ | -------------------------- |
-| ID_Startup                                    | INT          | FK -> Startup(ID_Startup)  |
-| ID_Jornada                                    | INT          | FK -> JornadaBase(ID)      |
-| ID_Eixo                                       | INT          | FK -> JornadaEixo(ID_Eixo) |
-| Data_Inicio                                   | DATE         | NOT NULL                   |
-| Data_Fim                                      | DATE         | NULL                       |
-| Historico_Monitoramento                       | TEXT         | NULL                       |
-| Progresso                                     | DECIMAL(5,2) | NULL                       |
-| Ultimo_Acesso                                 | DATETIME     | NULL                       |
-| PRIMARY KEY (ID_Startup, ID_Jornada, ID_Eixo) |
+| Campo                   | Tipo         | Restrição                      |
+| ----------------------- | ------------ | ------------------------------ |
+| ID_Startup              | INT          | PK,FK -> Startup(ID_Startup)   |
+| ID_Jornada              | INT          | PK, FK -> JornadaBase(ID)      |
+| ID_Eixo                 | INT          | PK, FK -> JornadaEixo(ID_Eixo) |
+| Data_Inicio             | DATE         | NOT NULL                       |
+| Data_Fim                | DATE         | NULL                           |
+| Historico_Monitoramento | TEXT         | NULL                           |
+| Progresso               | DECIMAL(5,2) | NULL                           |
+| Ultimo_Acesso           | DATETIME     | NULL                           |
 
 ---
 
@@ -141,14 +136,31 @@
 
 #### Tabela: **JornadaItem**
 
-| Campo     | Tipo         | Restrição                  |
-| --------- | ------------ | -------------------------- |
-| ID_Item   | INT          | PK, AUTO_INCREMENT         |
-| ID_Base   | INT          | FK -> JornadaBase(ID)      |
-| ID_Eixo   | INT          | FK -> JornadaEixo(ID_Eixo) |
-| Item      | VARCHAR(100) | NOT NULL                   |
-| Descricao | TEXT         | NULL                       |
-| Input     | BLOB         | NULL                       |
+| Campo              | Tipo                                                | Restrição                  |
+| ------------------ | --------------------------------------------------- | -------------------------- |
+| ID_Item            | INT                                                 | PK, AUTO_INCREMENT         |
+| ID_Base            | INT                                                 | FK -> JornadaBase(ID)      |
+| ID_Eixo            | INT                                                 | FK -> JornadaEixo(ID_Eixo) |
+| Item               | TEXT                                                | NOT NULL                   |
+| Descricao          | TEXT                                                | NOT NULL                   |
+| Input              | BLOB                                                | NULL                       |
+| Exemplos_Genericos | TEXT                                                | NULL                       |
+| Ferramentas        | TEXT                                                | NULL                       |
+| Material_Apoio     | TEXT                                                | NOT NULL                   |
+| Video              | TEXT                                                | NULL                       |
+| Entregas_Concretas | TEXT                                                | NOT NULL                   |
+| Status             | ENUM('vazio', 'em analise', 'aprovado', 'recusado') | DEFAULT 'vazio'            |
+
+---
+
+#### Tabela: **Feedback**
+
+| Campo         | Tipo     | Restrição                      |
+| ------------- | -------- | ------------------------------ |
+| ID_Feedback   | INT      | PK, AUTO_INCREMENT             |
+| ID_Item       | INT      | PK, FK -> JornadaItem(ID_Item) |
+| Observacoes   | TEXT     | NULL                           |
+| Data_Feedback | DATETIME | NOT NULL                       |
 
 ---
 
@@ -180,11 +192,10 @@
 
 #### Tabela: **MonitoramentoSocios**
 
-| Campo                                    | Tipo     | Restrição                     |
-| ---------------------------------------- | -------- | ----------------------------- |
-| ID_Monitoramento                         | INT      | FK -> Monitoramento(ID)       |
-| ID_Socio                                 | CHAR(11) | FK -> Socios(ID_Empreendedor) |
-| PRIMARY KEY (ID_Monitoramento, ID_Socio) |
+| Campo            | Tipo     | Restrição                         |
+| ---------------- | -------- | --------------------------------- |
+| ID_Monitoramento | INT      | PK, FK -> Monitoramento(ID)       |
+| ID_Socio         | CHAR(11) | PK, FK -> Socios(ID_Empreendedor) |
 
 ---
 
