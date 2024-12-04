@@ -4,6 +4,8 @@
 
 <img alt='Diagrama ER' src='../assets/diagramaBTec.png'/>
 
+- [Link no dbdiagram.io](https://dbdiagram.io/d/6750d2f6e9daa85acab295d6)
+
 ## Dicionário de Dados
 
 ### Tabela: **Usuario**
