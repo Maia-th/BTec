@@ -29,12 +29,12 @@
 
 #### Tabela: **Usuario_Rede_Social**
 
-| Campo                   | Tipo         | Restrição          |
-| ----------------------- | ------------ | ------------------ |
-| CPF                     | CHAR(11)     | FK -> Usuario(CPF) |
-| Nome_Rede               | VARCHAR(50)  | NOT NULL           |
-| Link                    | VARCHAR(255) | NOT NULL           |
-| PRIMARY KEY (CPF, Link) |
+| Campo                        | Tipo         | Restrição          |
+| ---------------------------- | ------------ | ------------------ |
+| CPF                          | CHAR(11)     | FK -> Usuario(CPF) |
+| Nome_Rede                    | VARCHAR(50)  | NOT NULL           |
+| Link                         | VARCHAR(255) | NOT NULL           |
+| PRIMARY KEY (CPF, Nome_Rede) |
 
 ---
 
@@ -86,12 +86,12 @@
 
 #### Tabela: **Startup_Rede_Social**
 
-| Campo                          | Tipo         | Restrição                 |
-| ------------------------------ | ------------ | ------------------------- |
-| ID_Startup                     | INT          | FK -> Startup(ID_Startup) |
-| Nome_Rede                      | VARCHAR(50)  | NOT NULL                  |
-| Link                           | VARCHAR(255) | NOT NULL                  |
-| PRIMARY KEY (ID_Startup, Link) |
+| Campo                               | Tipo         | Restrição                 |
+| ----------------------------------- | ------------ | ------------------------- |
+| ID_Startup                          | INT          | FK -> Startup(ID_Startup) |
+| Nome_Rede                           | VARCHAR(50)  | NOT NULL                  |
+| Link                                | VARCHAR(255) | NOT NULL                  |
+| PRIMARY KEY (ID_Startup, Nome_Rede) |
 
 ---
 
