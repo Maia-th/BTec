@@ -111,25 +111,44 @@
 
 ### Tabela: **JornadaStartup**
 
-| Campo                   | Tipo         | Descrição                                                                    | Restrição                      |
-| ----------------------- | ------------ | ---------------------------------------------------------------------------- | ------------------------------ |
-| ID_Startup              | INT          | Identificador único da startup, chave estrangeira para a tabela Startup.     | PK, FK -> Startup(ID_Startup)  |
-| ID_Jornada              | INT          | Identificador único da jornada, chave estrangeira para a tabela JornadaBase. | PK, FK -> JornadaBase(ID)      |
-| ID_Eixo                 | INT          | Identificador único do eixo, chave estrangeira para a tabela JornadaEixo.    | PK, FK -> JornadaEixo(ID_Eixo) |
-| Data_Inicio             | DATE         | Data de início da jornada.                                                   | NOT NULL                       |
-| Data_Fim                | DATE         | Data de fim da jornada.                                                      | NULL                           |
-| Historico_Monitoramento | TEXT         | Histórico de monitoramento da jornada.                                       | NULL                           |
-| Progresso               | DECIMAL(5,2) | Progresso da jornada em porcentagem.                                         | NULL                           |
-| Ultimo_Acesso           | DATETIME     | Data e hora do último acesso à jornada.                                      | NULL                           |
+| Campo                   | Tipo         | Descrição                                                                | Restrição                     |
+| ----------------------- | ------------ | ------------------------------------------------------------------------ | ----------------------------- |
+| ID_Startup              | INT          | Identificador único da startup, chave estrangeira para a tabela Startup. | PK, FK -> Startup(ID_Startup) |
+| Data_Inicio             | DATE         | Data de início da jornada.                                               | NOT NULL                      |
+| Data_Fim                | DATE         | Data de fim da jornada.                                                  | NULL                          |
+| Historico_Monitoramento | TEXT         | Histórico de monitoramento da jornada.                                   | NULL                          |
+| Progresso               | DECIMAL(5,2) | Progresso da jornada em porcentagem.                                     | NULL                          |
+| Ultimo_Acesso           | DATETIME     | Data e hora do último acesso à jornada.                                  | NULL                          |
 
 ---
 
 ### Tabela: **JornadaBase**
 
-| Campo | Tipo        | Descrição                     | Restrição          |
-| ----- | ----------- | ----------------------------- | ------------------ |
-| ID    | INT         | Identificador único da etapa. | PK, AUTO_INCREMENT |
-| Etapa | VARCHAR(50) | Nome da etapa.                | NOT NULL           |
+| Campo      | Tipo | Descrição                 | Restrição                    |
+| ---------- | ---- | ------------------------- | ---------------------------- |
+| ID         | INT  | Identificador único.      | PK, AUTO_INCREMENT           |
+| ID_Startup | INT  | Identificador da startup. | FK -> Startup(ID_Startup)    |
+| ID_Etapa   | INT  | Identificador da etapa.   | FK -> JornadaEtapa(ID_Etapa) |
+| ID_Eixo    | INT  | Identificador do eixo.    | FK -> JornadaEixo(ID_Eixo)   |
+
+---
+
+### Tabela: **JornadaBaseItem**
+
+| Campo   | Tipo | Descrição              | Restrição                  |
+| ------- | ---- | ---------------------- | -------------------------- |
+| ID      | INT  | Identificador único.   | PK, AUTO_INCREMENT         |
+| ID_Base | INT  | Identificador da base. | FK -> JornadaBase(ID)      |
+| ID_Item | INT  | Identificador do item. | FK -> JornadaItem(ID_Item) |
+
+---
+
+### Tabela: **JornadaEtapa**
+
+| Campo    | Tipo        | Descrição                     | Restrição          |
+| -------- | ----------- | ----------------------------- | ------------------ |
+| ID_Etapa | INT         | Identificador único da etapa. | PK, AUTO_INCREMENT |
+| Nome     | VARCHAR(50) | Nome da etapa.                | NOT NULL           |
 
 ---
 
@@ -144,31 +163,31 @@
 
 ### Tabela: **JornadaItem**
 
-| Campo              | Tipo                                                | Descrição                                                                            | Restrição                  |
-| ------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------- |
-| ID_Item            | INT                                                 | Identificador único do item da jornada.                                              | PK, AUTO_INCREMENT         |
-| ID_Base            | INT                                                 | Identificador único da etapa, chave estrangeira para a tabela JornadaBase.           | FK -> JornadaBase(ID)      |
-| ID_Eixo            | INT                                                 | Identificador único do eixo, chave estrangeira para a tabela JornadaEixo.            | FK -> JornadaEixo(ID_Eixo) |
-| Item               | TEXT                                                | Descrição do item da jornada.                                                        | NOT NULL                   |
-| Descricao          | TEXT                                                | Descrição detalhada do item da jornada.                                              | NOT NULL                   |
-| Input              | BLOB                                                | Arquivo de entrada para o item da jornada.                                           | NULL                       |
-| Exemplos_Genericos | TEXT                                                | Exemplos genéricos relacionados ao item da jornada.                                  | NULL                       |
-| Ferramentas        | TEXT                                                | Ferramentas recomendadas para o item da jornada.                                     | NULL                       |
-| Material_Apoio     | TEXT                                                | Material de apoio para o item da jornada.                                            | NOT NULL                   |
-| Video              | TEXT                                                | Vídeo relacionado ao item da jornada.                                                | NULL                       |
-| Entregas_Concretas | TEXT                                                | Entregas concretas esperadas para o item da jornada.                                 | NOT NULL                   |
-| Status             | ENUM('vazio', 'em analise', 'aprovado', 'recusado') | Status do item da jornada, pode ser 'vazio', 'em analise', 'aprovado' ou 'recusado'. | DEFAULT 'vazio'            |
+| Campo              | Tipo                                                | Descrição                                                                            | Restrição                    |
+| ------------------ | --------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------- |
+| ID_Item            | INT                                                 | Identificador único do item da jornada.                                              | PK, AUTO_INCREMENT           |
+| ID_Etapa           | INT                                                 | Identificador único da etapa, chave estrangeira para a tabela JornadaEtapa.          | FK -> JornadaEtapa(ID_Etapa) |
+| ID_Eixo            | INT                                                 | Identificador único do eixo, chave estrangeira para a tabela JornadaEixo.            | FK -> JornadaEixo(ID_Eixo)   |
+| Item               | TEXT                                                | Descrição do item da jornada.                                                        | NOT NULL                     |
+| Descricao          | TEXT                                                | Descrição detalhada do item da jornada.                                              | NOT NULL                     |
+| Input              | BLOB                                                | Arquivo de entrada para o item da jornada.                                           | NULL                         |
+| Exemplos_Genericos | TEXT                                                | Exemplos genéricos relacionados ao item da jornada.                                  | NULL                         |
+| Ferramentas        | TEXT                                                | Ferramentas recomendadas para o item da jornada.                                     | NULL                         |
+| Material_Apoio     | TEXT                                                | Material de apoio para o item da jornada.                                            | NOT NULL                     |
+| Video              | TEXT                                                | Vídeo relacionado ao item da jornada.                                                | NULL                         |
+| Entregas_Concretas | TEXT                                                | Entregas concretas esperadas para o item da jornada.                                 | NOT NULL                     |
+| Status             | ENUM('vazio', 'em analise', 'aprovado', 'recusado') | Status do item da jornada, pode ser 'vazio', 'em analise', 'aprovado' ou 'recusado'. | DEFAULT 'vazio'              |
 
 ---
 
 ### Tabela: **Feedback**
 
-| Campo         | Tipo     | Descrição                                                                            | Restrição                      |
-| ------------- | -------- | ------------------------------------------------------------------------------------ | ------------------------------ |
-| ID_Feedback   | INT      | Identificador único do feedback.                                                     | PK, AUTO_INCREMENT             |
-| ID_Item       | INT      | Identificador único do item da jornada, chave estrangeira para a tabela JornadaItem. | PK, FK -> JornadaItem(ID_Item) |
-| Observacoes   | TEXT     | Observações do feedback.                                                             | NULL                           |
-| Data_Feedback | DATETIME | Data e hora do feedback.                                                             | NOT NULL                       |
+| Campo         | Tipo     | Descrição                                                                                     | Restrição                 |
+| ------------- | -------- | --------------------------------------------------------------------------------------------- | ------------------------- |
+| ID_Feedback   | INT      | Identificador único do feedback.                                                              | PK, AUTO_INCREMENT        |
+| ID_BaseItem   | INT      | Identificador único do item da jornada base, chave estrangeira para a tabela JornadaBaseItem. | FK -> JornadaBaseItem(ID) |
+| Observacoes   | TEXT     | Observações do feedback.                                                                      | NULL                      |
+| Data_Feedback | DATETIME | Data e hora do feedback.                                                                      | NOT NULL                  |
 
 ---
 
@@ -189,12 +208,11 @@
 
 ### Tabela: **MonitoramentoItens**
 
-| Campo            | Tipo | Descrição                                                                            | Restrição                  |
-| ---------------- | ---- | ------------------------------------------------------------------------------------ | -------------------------- |
-| ID               | INT  | Identificador único do item de monitoramento.                                        | PK, AUTO_INCREMENT         |
-| ID_Monitoramento | INT  | Identificador único do monitoramento, chave estrangeira para a tabela Monitoramento. | FK -> Monitoramento(ID)    |
-| ID_Item          | INT  | Identificador único do item da jornada, chave estrangeira para a tabela JornadaItem. | FK -> JornadaItem(ID_Item) |
-| Nota             | INT  | Nota atribuída ao item de monitoramento.                                             | NOT NULL                   |
+| Campo            | Tipo | Descrição                                                                                     | Restrição                 |
+| ---------------- | ---- | --------------------------------------------------------------------------------------------- | ------------------------- |
+| ID               | INT  | Identificador único do item de monitoramento.                                                 | PK, AUTO_INCREMENT        |
+| ID_Monitoramento | INT  | Identificador único do monitoramento, chave estrangeira para a tabela Monitoramento.          | FK -> Monitoramento(ID)   |
+| ID_BaseItem      | INT  | Identificador único do item da jornada base, chave estrangeira para a tabela JornadaBaseItem. | FK -> JornadaBaseItem(ID) |
 
 ---
 
@@ -217,3 +235,5 @@
 | Mensagem     | TEXT     | Mensagem da notificação.                                      | NOT NULL                 |
 | Data_Envio   | DATETIME | Data e hora do envio da notificação.                          | NOT NULL                 |
 | Lida         | BOOLEAN  | Indica se a notificação foi lida (TRUE) ou não (FALSE).       | DEFAULT FALSE            |
+
+---
