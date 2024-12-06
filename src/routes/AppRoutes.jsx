@@ -6,6 +6,7 @@ import PMBTec from '../pages/pmbtec/PMBTec';
 import Selecao from '../pages/selecao/Selecao';
 import Startup from '../pages/startup/Startup';
 import Conteudos from '../pages/conteudos/Conteudos';
+import Login from '../pages/login/Login';
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const AppRoutes = () => {
       <Route path="/PMBTec" element={<PMBTec />} />
       <Route path="/Startup" element={<Startup />} />
       <Route path="/Conteudos" element={<Conteudos />} />
+      <Route path="/Login" element={<Login />} />
     </Routes>
   );
 };
