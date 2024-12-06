@@ -46,7 +46,7 @@ function navbarInst() {
               </Link>
             </li>
             <li>
-              <Link className="buttonLink" to="/">
+              <Link className="buttonLink" to="/Login">
                 LOGIN
               </Link>
             </li>
@@ -102,7 +102,7 @@ function navbarInst() {
                 </Link>
               </li>
               <li>
-                <Link className="buttonLink" to="/" onClick={menuShow}>
+                <Link className="buttonLink" to="/Login" onClick={menuShow}>
                   LOGIN
                 </Link>
               </li>

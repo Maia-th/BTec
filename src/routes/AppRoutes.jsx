@@ -1,12 +1,12 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Btec from '../pages/btec/Btec';
-import PIBTec from '../pages/pibtec/PIBTec';
-import PMBTec from '../pages/pmbtec/PMBTec';
-import Selecao from '../pages/selecao/Selecao';
-import Startup from '../pages/startup/Startup';
-import Conteudos from '../pages/conteudos/Conteudos';
-import Login from '../pages/login/Login';
+import Btec from '../pages/Btec';
+import PIBTec from '../pages/PIBTec';
+import PMBTec from '../pages/PMBTec';
+import Selecao from '../pages/Selecao';
+import Startup from '../pages/Startup';
+import Conteudos from '../pages/Conteudos';
+import Login from '../pages/Login';
 
 const AppRoutes = () => {
   return (
