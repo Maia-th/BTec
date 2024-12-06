@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "../navbar-institucional/Navbar.css";
 import logo from "../../assets/images/logoBranco.webp";
-import menuShow from "../../utils/menu-show/menuShow"
+import menuShow from "../../utils/menuShow";
 
 function navbarAdm() {
   return (
@@ -16,28 +16,34 @@ function navbarAdm() {
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link className="navLink" to="/">BTec</Link>
+              <Link className="navLink" to="/">
+                BTec
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Startups</Link>
+              <Link className="navLink" to="/">
+                Startups
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Monitoramentos</Link>
+              <Link className="navLink" to="/">
+                Monitoramentos
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Usuários</Link>
+              <Link className="navLink" to="/">
+                Usuários
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Relatórios</Link>
+              <Link className="navLink" to="/">
+                Relatórios
+              </Link>
             </li>
             <li>
-              <button
-                className="SigBTec"
-                onClick=""
-                title="Sistema de gerenciamento"
-              >
+              <Link className="buttonLink" to="/">
                 PERFIL
-              </button>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -49,7 +55,11 @@ function navbarAdm() {
               <img src={logo} alt="Logo" />
             </Link>
           </div>
-          <button className="mIcon" onClick={menuShow} title="Icone do Menu Mobile">
+          <button
+            className="mIcon"
+            onClick={menuShow}
+            title="Icone do Menu Mobile"
+          >
             <span id="barraMenu"></span>
           </button>
         </div>
@@ -82,13 +92,9 @@ function navbarAdm() {
                 </Link>
               </li>
               <li>
-                <button
-                  className="SigBTec"
-                  onClick=""
-                  title="Sistema de gerenciamento"
-                >
+                <Link className="buttonLink" to="/" onClick={menuShow}>
                   PERFIL
-                </button>
+                </Link>
               </li>
             </ul>
           </nav>

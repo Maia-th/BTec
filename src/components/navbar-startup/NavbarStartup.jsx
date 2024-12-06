@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "../navbar-institucional/Navbar.css";
 import logo from "../../assets/images/logoBranco.webp";
-import menuShow from "../../utils/menu-show/menuShow"
+import menuShow from "../../utils/menuShow";
 
 function navbarStartup() {
   return (
@@ -16,28 +16,34 @@ function navbarStartup() {
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link className="navLink" to="/">BTec</Link>
+              <Link className="navLink" to="/">
+                BTec
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Jornada do Empreendedor</Link>
+              <Link className="navLink" to="/">
+                Jornada do Empreendedor
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Monitoramentos</Link>
+              <Link className="navLink" to="/">
+                Monitoramentos
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Conteúdos e Evento</Link>
+              <Link className="navLink" to="/">
+                Conteúdos e Evento
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/">Suporte</Link>
+              <Link className="navLink" to="/">
+                Suporte
+              </Link>
             </li>
             <li>
-              <button
-                className="SigBTec"
-                onClick=""
-                title="Sistema de gerenciamento"
-              >
+              <Link className="buttonLink" to="/">
                 PERFIL
-              </button>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -49,7 +55,11 @@ function navbarStartup() {
               <img src={logo} alt="Logo" />
             </Link>
           </div>
-          <button className="mIcon" onClick={menuShow} title="Icone do Menu Mobile">
+          <button
+            className="mIcon"
+            onClick={menuShow}
+            title="Icone do Menu Mobile"
+          >
             <span id="barraMenu"></span>
           </button>
         </div>
@@ -82,13 +92,9 @@ function navbarStartup() {
                 </Link>
               </li>
               <li>
-                <button
-                  className="SigBTec"
-                  onClick=""
-                  title="Sistema de gerenciamento"
-                >
+                <Link className="buttonLink" to="/" onClick={menuShow}>
                   PERFIL
-                </button>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -98,4 +104,4 @@ function navbarStartup() {
   );
 }
 
-export default  navbarStartup;
+export default navbarStartup;

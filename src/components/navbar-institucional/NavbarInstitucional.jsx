@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/images/logoBranco.webp";
-import menuShow from "../../utils/menu-show/menuShow";
+import menuShow from "../../utils/menuShow";
 
 function navbarInst() {
   return (
@@ -16,22 +16,34 @@ function navbarInst() {
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link className="navLink" to="/">BTec</Link>
+              <Link className="navLink" to="/">
+                BTec
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/Selecao">Processo de Seleção</Link>
+              <Link className="navLink" to="/Selecao">
+                Processo de Seleção
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/PIBTec">PIBTec</Link>
+              <Link className="navLink" to="/PIBTec">
+                PIBTec
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/PMBTec">PMBTec</Link>
+              <Link className="navLink" to="/PMBTec">
+                PMBTec
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/Startup">Startups</Link>
+              <Link className="navLink" to="/Startup">
+                Startups
+              </Link>
             </li>
             <li>
-              <Link className="navLink" to="/Conteudos">Conteúdos e Eventos</Link>
+              <Link className="navLink" to="/Conteudos">
+                Conteúdos e Eventos
+              </Link>
             </li>
             <li>
               <Link className="buttonLink" to="/">
