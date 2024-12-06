@@ -1,0 +1,80 @@
+.containerLogin{
+  background-color: var(--btecBlue);
+  position: relative;
+}
+
+.divAzul{
+  padding: 4rem 10rem;
+}
+
+.logoSIGBtec{
+  width: 35%;
+}
+.divBranca{
+  padding: 3rem 10rem;
+  background-color: var(--white);
+}
+
+.textosLaterais{
+  width: 50%;
+}
+.textosLaterais p{
+  margin-top: 1rem;
+}
+
+.cardLogin{
+  background-color: white;
+  border-radius: 2.5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  height: 85%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3rem;
+  right: 15%;
+  padding: 4% 3%;
+}
+.loginForm{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loginForm input{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--btecBlue);
+  border-radius: 7px;
+}
+
+.loginButton{
+  background-color: var(--btecBlue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.formLinks{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+}
+
+.formLinks .loginAdm{
+  text-decoration: none;
+  color: var(--btecLaranja);
+}
+.formLinks .esqueceuSenha{
+  text-decoration: none;
+  color: var(--btecBlue);
+
+}
