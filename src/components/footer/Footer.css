@@ -53,6 +53,12 @@
   }
 }
 
+@media (min-width: 1013px) and (max-width: 1644px) {
+  .footer {
+    height: 14rem;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1342px) {
   .footer {
     padding: 0 5rem;

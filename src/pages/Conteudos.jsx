@@ -13,9 +13,9 @@ export default function Conteudos() {
     <React.StrictMode>
       <NavBar />
       <HeaderConteudos/>
-      <Videos />
       <Artigos />
       <Podcast />
+      <Videos />
       <Agenda />
       <Footer />
     </React.StrictMode>
