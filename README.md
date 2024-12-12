@@ -43,6 +43,8 @@ Este projeto segue o modelo GitFlow para organização das branches e fluxo de d
 
 1. Crie uma nova branch a partir de develop:
 
+> Antes de criar a nova branch, execute um `git pull origin develop` para garantir que a sua branch `develop` local esteja atualizada com a versão mais recente do repositório remoto.
+
 ```bash
 git checkout -b feature/nome-da-feature develop
 ```
@@ -73,6 +75,8 @@ git branch -d feature/nome-da-feature
 
 1. Crie uma nova branch `release` a partir da branch `develop`:
 
+> Antes de criar a nova branch, execute um `git pull origin develop` para garantir que a sua branch `develop` local esteja atualizada com a versão mais recente do repositório remoto.
+ 
 ```bash
 git checkout -b release/v-numero-da-versao develop
 ```
