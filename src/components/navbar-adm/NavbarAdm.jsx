@@ -19,28 +19,28 @@ function navbarAdm() {
               <a className="navLink" href="https://btec-itabira.vercel.app/" target="_blank" rel="noopener noreferrer">BTec</a>
             </li>
             <li>
-              <NavLink className="navLink" to="/" activeClassName="active">
+              <NavLink className="navLink" to="//addRota" activeClassName="active">
                 Startups
               </NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="/" activeClassName="active">
+              <NavLink className="navLink" to="/addRota" activeClassName="active">
                 Monitoramentos
               </NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="/" activeClassName="active">
+              <NavLink className="navLink" to="/addRota" activeClassName="active">
                 Usuários
               </NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="/" activeClassName="active">
+              <NavLink className="navLink" to="/addRota" activeClassName="active">
                 Relatórios
               </NavLink>
             </li>
             <li>
               {/* Alterar */}
-              <NavLink className="buttonLink" to="/">
+              <NavLink className="buttonLink" to="/addRota">
                 PERFIL
               </NavLink>
             </li>
