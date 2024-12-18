@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../navbar-institucional/Navbar.css";
 import logo from "../../assets/images/logoBranco.webp";
 import menuShow from "../../utils/menuShow";
@@ -9,41 +9,40 @@ function navbarAdm() {
     <section className="Navegacao">
       <div className="Menu-Desktop">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <img src={logo} alt="Logo" />
-          </Link>
+          </NavLink>
         </div>
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link className="navLink" to="/">
-                BTec
-              </Link>
+              <a className="navLink" href="https://btec-itabira.vercel.app/" target="_blank" rel="noopener noreferrer">BTec</a>
             </li>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="/" activeClassName="active">
                 Startups
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="/" activeClassName="active">
                 Monitoramentos
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="/" activeClassName="active">
                 Usuários
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="/" activeClassName="active">
                 Relatórios
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="buttonLink" to="/">
+              {/* Alterar */}
+              <NavLink className="buttonLink" to="/">
                 PERFIL
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -51,9 +50,9 @@ function navbarAdm() {
       <div id="Mobile" className="Menu-Mobile">
         <div className="menu-Icon">
           <div className="logo">
-            <Link to="/">
+            <NavLink to="/">
               <img src={logo} alt="Logo" />
-            </Link>
+            </NavLink>
           </div>
           <button
             className="mIcon"
@@ -67,34 +66,35 @@ function navbarAdm() {
           <nav id="Menu-Open">
             <ul>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   BTec
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   Startups
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   Monitoramentos
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   Usuários
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   Relatórios
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link className="buttonLink" to="/" onClick={menuShow}>
+                {/* Alterar */}
+                <NavLink className="buttonLink" to="/" onClick={menuShow}>
                   PERFIL
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>

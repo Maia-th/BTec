@@ -1,5 +1,4 @@
 /*GERAL*/
-.Navegacao nav .SigBTec,
 .Navegacao nav .buttonLink {
   background-color: transparent;
   border: solid 0.13rem var(--btecGray);
@@ -10,8 +9,8 @@
   cursor: pointer;
 }
 
-.Navegacao nav .SigBTec,
-.Navegacao nav .buttonLink:hover {
+.Navegacao nav .buttonLink:hover,
+.Navegacao nav .buttonLink.active {
   background-color: var(--btecLaranja);
   border: solid 0.13rem var(--btecLaranja);
   color: var(--white);
@@ -82,7 +81,8 @@
   transition: transform .3s ease-in-out;
 }
 
-.Navegacao .Menu-Desktop .Desktop-Nav ul li a.navLink:hover::before {
+.Navegacao .Menu-Desktop .Desktop-Nav ul li a.navLink:hover::before,
+.Navegacao .Menu-Desktop .Desktop-Nav ul li a.active::before {
   transform-origin: left;
   transform: scaleX(1);
 }
