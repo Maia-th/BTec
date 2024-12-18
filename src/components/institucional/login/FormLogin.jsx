@@ -14,10 +14,10 @@ function FormLogin() {
             <input type="password" id="password" name="password" required />
             <div className="formLinks">
               <a className="loginAdm" href="/">
-                login como administrador
+                Login como administrador
               </a>
               <a className="esqueceuSenha" href="/">
-                esqueceu sua senha? 
+                Esqueceu a sua senha? 
               </a>
             </div>
           </div>

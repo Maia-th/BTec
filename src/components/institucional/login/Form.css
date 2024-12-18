@@ -11,6 +11,7 @@
   height: 3rem;
   border: 1px solid var(--btecBlue);
   border-radius: 7px;
+  padding: 0 0.5rem;
 }
 
 .loginButton{
@@ -29,11 +30,13 @@
   justify-content: space-between;
   width: 100%;
   font-size: 13px;
+  padding: 0.5rem 0;
 }
 
 .formLinks .loginAdm{
   text-decoration: none;
   color: var(--btecLaranja);
+  padding-right: 0.5rem;
 }
 .formLinks .esqueceuSenha{
   text-decoration: none;
