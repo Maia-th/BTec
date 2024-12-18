@@ -1,10 +1,14 @@
 import React from "react";
-import LoginPage from "../components/institucional/login/LoginPage";
+import LayoutInstitucional from "../layout/Default";
+import LayoutLogin from "../layout/Login";
+import FormLogin from "../components/institucional/login/FormLogin";
 
 export default function Login() {
   return (
     <React.StrictMode>
-      <LoginPage />
+      <LayoutInstitucional>
+      <LayoutLogin form={<FormLogin />} />
+      </LayoutInstitucional>
     </React.StrictMode>
   );
 }

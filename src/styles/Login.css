@@ -1,0 +1,38 @@
+.containerLogin{
+    background-color: var(--btecBlue);
+    position: relative;
+  }
+  
+  .divAzul{
+    padding: 4rem 10rem;
+  }
+  
+  .logoSIGBtec{
+    width: 35%;
+  }
+  .divBranca{
+    padding: 3rem 10rem;
+    background-color: var(--white);
+  }
+  
+  .textosLaterais{
+    width: 50%;
+  }
+  .textosLaterais p{
+    margin-top: 1rem;
+  }
+
+  .cardLogin{
+    background-color: white;
+    border-radius: 2.5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    height: 85%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 3rem;
+    right: 15%;
+    padding: 4% 3%;
+  }

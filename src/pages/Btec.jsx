@@ -1,4 +1,5 @@
 import React from "react";
+import LayoutInstitucional from "../layout/Default";
 import HeaderBtec from "../components/institucional/btec/header-btec/HeaderBtec";
 import Parceiros from "../components/institucional/btec/parceiros/Parceiros";
 import Numeros from "../components/institucional/btec/numeros/Numeros";
@@ -10,13 +11,15 @@ import QuemSomos from "../components/institucional/btec/quemSomos/QuemSomos";
 export default function Btec() {
   return (
     <React.StrictMode>
-      <HeaderBtec />
-      <Itabira />
-      <Programas />
-      <QuemSomos />
-      <Numeros />
-      <Missao />
-      <Parceiros />
+      <LayoutInstitucional>
+        <HeaderBtec />
+        <Itabira />
+        <Programas />
+        <QuemSomos />
+        <Numeros />
+        <Missao />
+        <Parceiros />
+      </LayoutInstitucional>
     </React.StrictMode>
   );
 }
