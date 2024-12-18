@@ -1,0 +1,53 @@
+.loginForm{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loginForm input{
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--btecBlue);
+  border-radius: 7px;
+  padding: 0 0.5rem;
+}
+
+.loginButton{
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: var(--btecBlue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 4rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 5ms;
+}
+
+.formLinks{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  padding: 0.5rem 0;
+}
+
+.formLinks .loginAdm{
+  text-decoration: none;
+  color: var(--btecLaranja);
+  padding-right: 0.5rem;
+}
+.formLinks .esqueceuSenha{
+  text-decoration: none;
+  color: var(--btecBlue);
+
+}
