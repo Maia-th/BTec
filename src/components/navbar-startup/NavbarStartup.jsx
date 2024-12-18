@@ -16,33 +16,29 @@ function navbarStartup() {
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <NavLink className="navLink" to="/">
-                BTec
-              </NavLink>
+              <a className="navLink" href="https://btec-itabira.vercel.app/" target="_blank" rel="noopener noreferrer">BTec</a>
             </li>
             <li>
-              <NavLink className="navLink" to="/" activeClassName="active">
+              <NavLink className="navLink" to="//addRota" activeClassName="active">
                 Jornada do Empreendedor
               </NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="/" activeClassName="active">
+              <NavLink className="navLink" to="/addRota" activeClassName="active">
                 Monitoramentos
               </NavLink>
             </li>
             <li>
-              <NavLink className="navLink" to="/">
-                Conteúdos e Evento
-              </NavLink>
+              <a className="navLink" href="https://btec-itabira.vercel.app/Conteudos" target="_blank" rel="noopener noreferrer">Conteúdos e Evento</a>
             </li>
             <li>
-              <NavLink className="navLink" to="/" activeClassName="active">
+              <NavLink className="navLink" to="/addRota" activeClassName="active">
                 Suporte
               </NavLink>
             </li>
             <li>
               {/* Alterar */}
-              <NavLink className="buttonLink" to="/">
+              <NavLink className="buttonLink" to="/addRota">
                 PERFIL
               </NavLink>
             </li>
