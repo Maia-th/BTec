@@ -1,14 +1,14 @@
 import React from "react";
-import NavBar from "../components/navbar-institucional/NavbarInstitucional";
-import LoginPage from "../components/institucional/login/LoginPage";
-import Footer from "../components/footer/Footer";
+import LayoutInstitucional from "../layout/Default";
+import LayoutLogin from "../layout/Login";
+import FormLogin from "../components/institucional/login/FormLogin";
 
 export default function Login() {
   return (
     <React.StrictMode>
-      <NavBar />
-      <LoginPage />
-      <Footer />
+      <LayoutInstitucional>
+      <LayoutLogin form={<FormLogin />} />
+      </LayoutInstitucional>
     </React.StrictMode>
   );
 }

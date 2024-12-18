@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/images/logoBranco.webp";
 import menuShow from "../../utils/menuShow";
@@ -9,46 +9,46 @@ function navbarInst() {
     <section className="Navegacao">
       <div className="Menu-Desktop">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <img src={logo} alt="Logo" />
-          </Link>
+          </NavLink>
         </div>
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="/" activeClassName="active">
                 BTec
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/Selecao">
+              <NavLink className="navLink" to="/Selecao" activeClassName="active">
                 Processo de Seleção
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/PIBTec">
+              <NavLink className="navLink" to="/PIBTec" activeClassName="active">
                 PIBTec
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/PMBTec">
+              <NavLink className="navLink" to="/PMBTec" activeClassName="active">
                 PMBTec
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/Startup">
+              <NavLink className="navLink" to="/Startup" activeClassName="active">
                 Startups
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/Conteudos">
+              <NavLink className="navLink" to="/Conteudos" activeClassName="active">
                 Conteúdos e Eventos
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="buttonLink" to="/Login">
+              <NavLink className="buttonLink" to="/Login" activeClassName="active">
                 LOGIN
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -56,9 +56,9 @@ function navbarInst() {
       <div id="Mobile" className="Menu-Mobile">
         <div className="menu-Icon">
           <div className="logo">
-            <Link to="/">
+            <NavLink to="/">
               <img src={logo} alt="Logo" />
-            </Link>
+            </NavLink>
           </div>
           <button
             className="mIcon"
@@ -72,39 +72,39 @@ function navbarInst() {
           <nav id="Menu-Open">
             <ul>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   BTec
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/Selecao" onClick={menuShow}>
+                <NavLink to="/Selecao" onClick={menuShow}>
                   Processo de Seleção
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/PIBTec" onClick={menuShow}>
+                <NavLink to="/PIBTec" onClick={menuShow}>
                   PIBTec
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/PMBTec" onClick={menuShow}>
+                <NavLink to="/PMBTec" onClick={menuShow}>
                   PMBTec
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/Startup" onClick={menuShow}>
+                <NavLink to="/Startup" onClick={menuShow}>
                   Startups
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/Conteudos" onClick={menuShow}>
+                <NavLink to="/Conteudos" onClick={menuShow}>
                   Conteúdos e Eventos
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link className="buttonLink" to="/Login" onClick={menuShow}>
+                <NavLink className="buttonLink" to="/Login" onClick={menuShow}>
                   LOGIN
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>

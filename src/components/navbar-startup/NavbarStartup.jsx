@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../navbar-institucional/Navbar.css";
 import logo from "../../assets/images/logoBranco.webp";
 import menuShow from "../../utils/menuShow";
@@ -9,41 +9,38 @@ function navbarStartup() {
     <section className="Navegacao">
       <div className="Menu-Desktop">
         <div className="logo">
-          <Link to="/">
+          <NavLink to="/">
             <img src={logo} alt="Logo" />
-          </Link>
+          </NavLink>
         </div>
         <nav className="Desktop-Nav">
           <ul>
             <li>
-              <Link className="navLink" to="/">
-                BTec
-              </Link>
+              <a className="navLink" href="https://btec-itabira.vercel.app/" target="_blank" rel="noopener noreferrer">BTec</a>
             </li>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="//addRota" activeClassName="active">
                 Jornada do Empreendedor
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="/addRota" activeClassName="active">
                 Monitoramentos
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="navLink" to="/">
-                Conteúdos e Evento
-              </Link>
+              <a className="navLink" href="https://btec-itabira.vercel.app/Conteudos" target="_blank" rel="noopener noreferrer">Conteúdos e Evento</a>
             </li>
             <li>
-              <Link className="navLink" to="/">
+              <NavLink className="navLink" to="/addRota" activeClassName="active">
                 Suporte
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link className="buttonLink" to="/">
+              {/* Alterar */}
+              <NavLink className="buttonLink" to="/addRota">
                 PERFIL
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
@@ -51,9 +48,9 @@ function navbarStartup() {
       <div id="Mobile" className="Menu-Mobile">
         <div className="menu-Icon">
           <div className="logo">
-            <Link to="/">
+            <NavLink to="/">
               <img src={logo} alt="Logo" />
-            </Link>
+            </NavLink>
           </div>
           <button
             className="mIcon"
@@ -67,34 +64,31 @@ function navbarStartup() {
           <nav id="Menu-Open">
             <ul>
               <li>
-                <Link to="/" onClick={menuShow}>
-                  BTec
-                </Link>
+              <a className="navLink" href="https://btec-itabira.vercel.app/" target="_blank" rel="noopener noreferrer">BTec</a>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   Jornada do Empreendedor
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   Monitoramentos
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
-                  Conteúdos e Eventos
-                </Link>
+              <a className="navLink" href="https://btec-itabira.vercel.app/Conteudos" target="_blank" rel="noopener noreferrer">Conteúdos e Eventos</a>
               </li>
               <li>
-                <Link to="/" onClick={menuShow}>
+                <NavLink to="/" onClick={menuShow}>
                   Suporte
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link className="buttonLink" to="/" onClick={menuShow}>
+                {/* Alterar */}
+                <NavLink className="buttonLink" to="/" onClick={menuShow}>
                   PERFIL
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </nav>

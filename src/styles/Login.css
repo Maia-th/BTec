@@ -1,0 +1,162 @@
+.containerLogin {
+  position: relative;
+  min-height: calc(100vh - 315.77px);
+}
+
+.divAzul {
+  background-color: var(--btecBlue);
+  padding: 1.5rem 10rem 2rem;
+}
+
+.logoSIGBtec {
+  max-width: 40%;
+  width: 35rem;
+  margin-left: 8%;
+}
+
+.divBranca {
+  padding: 3.5rem 10rem;
+}
+
+.textosLaterais {
+  width: 50%;
+  margin-left: 3%;
+}
+
+.textosLaterais p {
+  margin-top: 1rem;
+}
+
+.cardLogin {
+  background-color: white;
+  border-radius: 2.5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  width: 35rem;
+  height: 33rem;
+  min-height: 75%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3rem;
+  right: 15%;
+  padding: 4% 3%;
+}
+
+@media (max-width: 1644px) {
+  .containerLogin {
+    min-height: calc(100vh - 290.17px);
+  }
+  .cardLogin {
+    width: 30rem;
+    height: 30rem;
+  }
+  .logoSIGBtec {
+    margin-left: 7%;
+  }
+}
+
+@media (max-width: 1499px) {
+  .cardLogin {
+    width: 26rem;
+    height: 29rem;
+  }
+
+  .logoSIGBtec {
+    margin-left: 6%;
+  }
+  .textosLaterais {
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 1342px) {
+  .divAzul {
+    padding: 1.5rem 3rem 2rem;
+  }
+
+  .divBranca {
+    padding: 4.5rem 3rem;
+  }
+
+  .cardLogin {
+    width: 26rem;
+    right: 10%;
+  }
+
+  .logoSIGBtec {
+    margin-left: 8%;
+  }
+  .textosLaterais {
+    margin-left: 3%;
+  }
+}
+
+@media (max-width: 1099px) {
+  .containerLogin {
+    height: 35rem;
+    min-height: calc(100vh - 290.17px);
+  }
+  .cardLogin {
+    width: 80%;
+    min-height: 50%;
+    top: 60%;
+    left: 60%;
+    transform: translate(-60%, -60%);
+  }
+  .divAzul {
+    height: 55%;
+  }
+
+  .logoSIGBtec {
+    max-width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 00%);
+  }
+
+  .textosLaterais {
+    display: none;
+  }
+}
+
+@media (max-width: 1012px) {
+  .containerLogin {
+    min-height: calc(100vh - 306.17px);
+  }
+}
+
+@media (max-width: 819px) {
+  .cardLogin {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .divAzul {
+    height: 50%;
+  }
+  .logoSIGBtec {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .cardLogin {
+    width: 90%;
+    right: 5%;
+    min-height: auto;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .containerLogin {
+    min-height: calc(100vh - 226.17px);
+  }
+}
+
+@media (min-width:344px) and (max-width: 399px) {
+  .containerLogin {
+    min-height: calc(100vh - 194.17px);
+  }
+}
