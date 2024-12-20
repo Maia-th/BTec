@@ -20,7 +20,7 @@ function navbarStartup() {
             </li>
             <li>
               <NavLink className="navLink" to="//addRota" activeClassName="active">
-                Jornada do Empreendedor
+                Jornada
               </NavLink>
             </li>
             <li>

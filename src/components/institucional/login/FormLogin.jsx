@@ -7,11 +7,11 @@ function FormLogin() {
           <h1>Login</h1>
           <div className="formGroup">
             <label htmlFor="email">Entre com seu email</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" placeholder="Email" required />
           </div>
           <div className="formGroup">
             <label htmlFor="password">Entre com sua senha</label>
-            <input type="password" id="password" name="password" required />
+            <input type="password" id="password" name="password" placeholder="Senha" required />
             <div className="formLinks">
               <a className="loginAdm" href="/">
                 Login como administrador
