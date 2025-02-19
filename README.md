@@ -97,8 +97,6 @@ git branch -d release/v-numero-da-versao
 
 ## Bibliotecas
 
-- [Shadcn - Components](https://ui.shadcn.com/docs)
-
 - [Phosphor - Icons](https://phosphoricons.com)
 
 - [Axios - HTTP Client](https://axios-http.com/docs/intro)
