@@ -1,7 +1,5 @@
 # BTec - Incubadora de Negócios de Impacto e Base Tecnológica de Itabira
 
-⚠️ Em Desenvolvimento!
-
 ## Requisitos do Ambiente
 
 Para rodar o projeto localmente, certifique-se de ter a seguinte ferramenta instalada:
